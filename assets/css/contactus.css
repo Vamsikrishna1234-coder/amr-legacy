@@ -1,0 +1,91 @@
+/* HERO */
+.contact-hero {
+  position: relative;
+  height: 70vh;
+  background: url('assets/images/contact-hero.jpg') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.contact-hero-content {
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.contact-hero-content h1 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.contact-hero-content p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+
+/* CONTACT SECTION */
+.contact-section {
+  padding: 70px 0;
+  background: #fff;
+}
+
+.contact-heading {
+  font-size: 28px;
+  font-weight: 800;
+  color: #203370;
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.contact-form button {
+  background: #203370;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #d1a32c;
+}
+
+.contact-details p {
+  font-size: 17px;
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.contact-details i {
+  color: #203370;
+  margin-right: 10px;
+}
+
+
+/* MAP */
+.contact-map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
