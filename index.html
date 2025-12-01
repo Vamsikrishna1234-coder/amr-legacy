@@ -8,8 +8,12 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!--website icon-->
+  <link rel="icon" type="image/png" href="assets/images/Amr favicon.png">
 </head>
 <body>
 
@@ -19,7 +23,7 @@
     <div class="d-flex align-items-center justify-content-between gap-3">
 
       <!-- Logo -->
-      <a href="#" class="header-logo d-flex align-items-center">
+      <a href="index.html" class="header-logo d-flex align-items-center">
         <img src="assets/images/amr-logo.png" alt="Logo" class="logo-img">
       </a>
 
@@ -35,135 +39,152 @@
       </nav>
 
       <!-- Right Side -->
-      <a href="#" class="btn btn-outline-success d-none d-lg-block site-visit-btn">Book a Site Visit</a>
+      <a href="contactus.html" class="btn site-visit-btn d-none d-lg-block">Enquiry Now</a>
+
 
       <!-- Mobile Menu Toggle -->
-      <button class="btn d-lg-none border-0 fs-4 text-white">&#9776;</button>
+      <button class="btn d-lg-none border-0 fs-4 text-black">&#9776;</button>
     </div>
 
   </div>
 </header>
 
+
+<!-- MOBILE MENU PANEL -->
+<div id="mobileMenu" class="mobile-menu">
+    <button class="mobile-close">&times;</button>
+
+    <ul class="mobile-nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="contactus.html" class="mobile-enquiry-btn">Enquiry Now</a></li>
+    </ul>
+</div>
+
+
+<!-- SOCIAL MEDIA FLOATING BAR -->
+<div class="social-fixed-bar">
+    <a href="https://www.facebook.com/amrlivingspaces" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/amrlivingspaces/" target="_blank" class="ig"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@AMRLivingSpaces" target="_blank" class="yt"><i class="fab fa-youtube"></i></a>
+    <a href="https://x.com/AmrLiving" target="_blank" class="tw"><i class="fab fa-twitter"></i></a>
+</div>
+
+
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/919052299299" target="_blank" class="whatsapp-float">
+    <img src="assets/images/whatsapp icon.avif" alt="WhatsApp">
+</a>
+
+
 <!--herosection-->
-<section class="hero">
-    
-    <!-- Image 1: Falls from TOP -->
-    <div class="bg-slide from-top">
-      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&h=1080&fit=crop" alt="Villa">
+<div class="hero-container">
+    <!-- Image Slides -->
+    <div class="image-slide active" data-index="0">
+      <img src="assets/images/amr hero2.jpg" alt="Luxury Villa">
+    </div>
+    <div class="image-slide" data-index="1">
+      <img src="assets/images/amr hero1.jpg" alt="Modern Architecture">
+    </div>
+    <div class="image-slide" data-index="2">
+      <img src="assets/images/amr hero3.jpg" alt="Contemporary Design">
     </div>
 
-    <!-- Image 2: Slides from RIGHT -->
-    <div class="bg-slide from-right">
-      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&h=1080&fit=crop" alt="Modern House">
-    </div>
+    <!-- Overlay -->
+    <div class="hero-overlay"></div>
 
-    <!-- Image 3: Slides from LEFT -->
-    <div class="bg-slide from-left">
-      <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1920&h=1080&fit=crop" alt="Minimal Residence">
+    <!-- Slide Number -->
+    <div class="slide-number">01</div>
+
+    <!-- Progress Indicators -->
+    <div class="progress-container">
+      <div class="progress-dot active" data-slide="0"></div>
+      <div class="progress-dot" data-slide="1"></div>
+      <div class="progress-dot" data-slide="2"></div>
     </div>
-</section>
+  </div>
 
 
 <!--tree image-->
-<section class="golden-tree-section">
+<section class="golden-tree-section" data-aos="fade-up">
     
     <!-- Left vertical text -->
-    <div class="vertical-text">
+    <div class="vertical-text" data-aos="fade-right" data-aos-delay="150">
         <h2>Where Nature Nurtures<br>
            You to Become The One</h2>
     </div>
 
     <!-- Main illustration -->
-    <div class="tree-image-box">
+    <div class="tree-image-box" data-aos="zoom-in" data-aos-delay="300">
         <img src="assets/images/tree image .png" alt="Golden Tree Illustration">
     </div>
 
     <!-- Bottom content -->
-    <div class="tree-content">
-        <h1>Golden Tree</h1>
+    <div class="tree-content" data-aos="fade-up" data-aos-delay="450">
+        <h2>Golden Tree</h2>
         <p>
             Not merely a tree, but a living emblem of balance, where legacy runs
             deep through its roots, heritage whispers through its leaves, and
             wisdom blooms in every branch.
         </p>
     </div>
-    
-
 </section>
 
 
 <!--promises-->
-<section class="foundation-section bg-golden relative overflow-hidden py-20 px-4">
+<section class="foundation-circle-section" data-aos="fade-up">
 
-    <!-- Header -->
-    <div class="text-center mb-20">
-        <h2 class="foundation-title">
-            THE FOUNDATIONS<br>
-            <span>THAT MAKE US</span><br>
-            STRONG AND STEADY
-        </h2>
-    </div>
+    <h2 class="foundation-circle-title" data-aos="fade-up" data-aos-delay="100">
+        THE FOUNDATIONS THAT MAKE US STRONG AND STEADY
+    </h2>
 
-    <!-- Foundation List -->
-    <div class="foundation-list mx-auto">
-        
-        <!-- Item -->
-        <div class="foundation">
-            <div class="badge">01</div>
-            <h3>Vision</h3>
-            <p>We begin with a clear and compelling vision that shapes our direction and purpose.</p>
+    <div class="foundation-circle-wrapper">
+
+        <div class="foundation-circle-item" data-aos="zoom-in" data-aos-delay="100">
+            <h3>VISION</h3>
         </div>
 
-        <div class="foundation">
-            <div class="badge">02</div>
-            <h3>Planning</h3>
-            <p>Strategic planning ensures every step is thoughtful, structured, and aligned with our goals.</p>
+        <div class="foundation-circle-item" data-aos="zoom-in" data-aos-delay="200">
+            <h3>PLANNING</h3>
         </div>
 
-        <div class="foundation">
-            <div class="badge">03</div>
-            <h3>Execution</h3>
-            <p>We turn ideas into reality with precision, discipline, and excellence in delivery.</p>
+        <div class="foundation-circle-item" data-aos="zoom-in" data-aos-delay="300">
+            <h3>EXECUTION</h3>
         </div>
 
-        <div class="foundation">
-            <div class="badge">04</div>
-            <h3>Support</h3>
-            <p>Our team and systems provide unwavering support—before, during, and after every milestone.</p>
+        <div class="foundation-circle-item" data-aos="zoom-in" data-aos-delay="400">
+            <h3>SUPPORT</h3>
         </div>
 
-        <div class="foundation">
-            <div class="badge">05</div>
-            <h3>Trust</h3>
-            <p>We build lasting relationships through honesty, transparency, and consistency.</p>
+        <div class="foundation-circle-item" data-aos="zoom-in" data-aos-delay="500">
+            <h3>TRUST</h3>
         </div>
 
-        <div class="foundation">
-            <div class="badge">06</div>
-            <h3>Value</h3>
-            <p>Everything we do is driven by a commitment to deliver maximum value.</p>
+        <div class="foundation-circle-item" data-aos="zoom-in" data-aos-delay="600">
+            <h3>VALUE</h3>
         </div>
-    </div>
 
-    <!-- CTA -->
-    <div class="cta-center">
-        <button class="cta-btn">Book a Site Visit</button>
     </div>
 
 </section>
 
 
+
 <!--about legacy-->
-<section class="legacy-unique">
+<section class="legacy-unique" data-aos="fade-up">
 
     <!-- LEFT SIDE : ARC IMAGE DESIGN -->
-    <div class="legacy-arc-box">
+    <div class="legacy-arc-box" data-aos="fade-right" data-aos-delay="150">
         <div class="arc-frame"></div>
-        <img src="assets/images/tree image .png" class="arc-image" alt="AMR Legacy">
+        <img src="assets/images/amr project1.jpg" class="arc-image" alt="AMR Legacy">
     </div>
 
     <!-- RIGHT SIDE : TEXT -->
-    <div class="legacy-content">
+    <div class="legacy-content" data-aos="fade-left" data-aos-delay="300">
         <h2>About Amr Legacy</h2>
 
         <p>
@@ -188,56 +209,149 @@
 <!--parallelex-->
 <section class="parallax-section"></section>
 
-<!--highlights-->
- <section class="highlights-numbered">
-    <div class="numbered-container">
-        <h2 class="numbered-title">Project Highlights</h2>
+<!--projects-highlights-->
+<section class="highlights-modern" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="numbered-grid">
+    <h2 class="highlights-modern-title">Project Highlights</h2>
 
-            <div class="num-item"><span>01</span> 2200 Sft - 5100 Sft Villa Sizes</div>
-            <div class="num-item"><span>02</span> Grand Entrance</div>
-            <div class="num-item"><span>03</span> 15,000+ Sft Clubhouse</div>
-            <div class="num-item"><span>04</span> East & West Facing Villas</div>
-            <div class="num-item"><span>05</span> 4L Sft Project</div>
-            <div class="num-item"><span>06</span> 25+ Amenities</div>
-            <div class="num-item"><span>07</span> 30ft & 40ft Roads</div>
-            <div class="num-item"><span>08</span> Walking Track</div>
-            <div class="num-item"><span>09</span> Lord Ganesh Statue</div>
-            <div class="num-item"><span>10</span> Indoor & Outdoor Games</div>
-            <div class="num-item"><span>11</span> Banyan Tree Lawn</div>
-            <div class="num-item"><span>12</span> Outdoor & Indoor Gym</div>
-            <div class="num-item"><span>13</span> Landscaping Gardens</div>
-            <div class="num-item"><span>14</span> Pet Park</div>
-            <div class="num-item"><span>15</span> 24/7 Security</div>
+    <div class="highlights-modern-grid">
 
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="fas fa-home"></i>
+            <h3>2200 – 5100 Sft Villas</h3>
         </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="150">
+            <i class="fas fa-door-open"></i>
+            <h3>Grand Entrance Arch</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-building"></i>
+            <h3>15,000+ Sft Clubhouse</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="250">
+            <i class="fas fa-compass"></i>
+            <h3>East & West Facing Villas</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="fas fa-layer-group"></i>
+            <h3>4L Sft Township</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="350">
+            <i class="fas fa-star"></i>
+            <h3>25+ Premium Amenities</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="400">
+            <i class="fas fa-road"></i>
+            <h3>30ft & 40ft Internal Roads</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="450">
+            <i class="fas fa-walking"></i>
+            <h3>Walking & Jogging Track</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="500">
+            <i class="fas fa-tree"></i>
+            <h3>Lord Ganesh Statue Zone</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="550">
+            <i class="fas fa-dumbbell"></i>
+            <h3>Indoor & Outdoor Games</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="600">
+            <i class="fas fa-leaf"></i>
+            <h3>Banyan Tree Lawn</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="650">
+            <i class="fas fa-heartbeat"></i>
+            <h3>Outdoor & Indoor Gym</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="700">
+            <i class="fas fa-seedling"></i>
+            <h3>Landscaped Gardens</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="750">
+            <i class="fas fa-paw"></i>
+            <h3>Pet Park</h3>
+        </div>
+
+        <div class="highlight-card" data-aos="zoom-in" data-aos-delay="800">
+            <i class="fas fa-shield-alt"></i>
+            <h3>24/7 Security Surveillance</h3>
+        </div>
+
     </div>
+
 </section>
 
 
-<!-- ONGOING PROJECT SECTION – White + Blue Version -->
-<section class="amr-legacy-white">
-    <div class="project-wrapper">
-      <h2 class="section-title">Ongoing Project</h2>
-      <div class="project-image">
-        <img src="assets/images/tree image .png" alt="AMR Legacy">
-      </div>
+<!-- ONGOING PROJECT SECTION Version -->
+<section class="single-project-card-section">
 
-      <div class="project-card">
-        <h3 class="project-name">AMR Legacy</h3>
-        <p class="project-tagline">
-          This isn’t about setting standards;
-          it’s about continuing legacies.
-          Where stories are carried forward
-          and homes become heirlooms.
-        </p>
-        <a href="amr-legacy.html" class="view-btn">View Project →</a>
+  <h2 class="opc-title">Ongoing Project</h2>
+
+  <div class="project-card-full">
+
+    <!-- IMAGE -->
+    <div class="pcf-image">
+        <img src="assets/images/amr hero3.jpg" class="img-main" alt="">
+         <img src="assets/images/amr hero3.jpg" class="img" alt="">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="pcf-content">
+
+      <h2 class="pcf-title">AMR Legacy</h2>
+      <p class="pcf-location"><i class="fas fa-map-marker-alt"></i> Gowrelly ,Hyderabad, Telangana</p>
+
+      <!-- SPECS -->
+      <div class="pcf-specs">
+
+        <div class="spec-box">
+          <i class="fas fa-ruler-combined"></i>
+          <p class="label">Size</p>
+          <p class="value">220 Sqyd</p>
+        </div>
+
+        <div class="spec-box">
+          <i class="fas fa-vector-square"></i>
+          <p class="label">Buildup Area</p>
+          <p class="value">3200 Sft</p>
+        </div>
+
+        <div class="spec-box">
+          <i class="fas fa-home"></i>
+          <p class="label">Type</p>
+          <p class="value">4BHK</p>
+        </div>
+
+        <div class="spec-box">
+          <i class="fas fa-rupee-sign"></i>
+          <p class="label">Price</p>
+          <p class="value">1.25 Cr*</p>
+        </div>
+
+        <!-- VIEW PROJECT BUTTON -->
+       <a href="projects.html" class="pcf-view-btn">View Project →</a>
+
       </div>
 
     </div>
+  </div>
 
 </section>
+
 <!--testimonials-->
   <section class="amr-testimonials-scroll">
 
@@ -375,53 +489,47 @@
 
 </section>
 
-<section class="blogs-section">
+<!--blogs section-->
+<section class="blogs-section" data-aos="fade-up">
 
-    <h2 class="blogs-title">Latest Blogs</h2>
-    <p class="blogs-subtitle">Insights that help you make smarter living choices.</p>
+    <h2 class="blogs-title" data-aos="fade-up" data-aos-delay="100">Latest Blogs</h2>
+    <p class="blogs-subtitle" data-aos="fade-up" data-aos-delay="200">Insights that help you make smarter living choices.</p>
 
     <div class="blogs-grid">
 
-        <!-- BLOG 1 -->
-        <a href="blog1.html" class="blog-card">
+        <a href="blogs1.html" class="blog-card" data-aos="zoom-in" data-aos-delay="150">
             <div class="blog-img">
-                <img src="assets/images/tree image .png" alt="Blog 1">
-
-                <!-- Hover Overlay -->
+                <img src="assets/images/amr project1.jpg" alt="Blog 1">
                 <div class="view-overlay">View Blog</div>
             </div>
-
             <div class="blog-content">
                 <h3>How do villas offer a better quality of life?</h3>
                 <p class="author">– Public Works Department, Karnataka</p>
             </div>
         </a>
 
-        <!-- BLOG 2 -->
-        <a href="blog2.html" class="blog-card">
+        <a href="blogs2.html" class="blog-card" data-aos="zoom-in" data-aos-delay="250">
             <div class="blog-img">
-                <img src="assets/images/tree image .png" alt="Blog 2">
+                <img src="assets/images/home2.png" alt="Blog 2">
                 <div class="view-overlay">View Blog</div>
             </div>
-
             <div class="blog-content">
                 <h3>What makes villas a better investment than apartments?</h3>
                 <p class="author">– Public Works Department, Karnataka</p>
             </div>
         </a>
 
-        <!-- BLOG 3 -->
-        <a href="blog3.html" class="blog-card">
+        <a href="blogs3.html" class="blog-card" data-aos="zoom-in" data-aos-delay="350">
             <div class="blog-img">
-                <img src="assets/images/tree image .png" alt="Blog 3">
+                <img src="assets/images/amr project2.jpg" alt="Blog 3">
                 <div class="view-overlay">View Blog</div>
             </div>
-
             <div class="blog-content">
                 <h3>How does living in a villa improve your lifestyle & wellness?</h3>
                 <p class="author">– Public Works Department, Karnataka</p>
             </div>
         </a>
+
     </div>
 </section>
 
@@ -446,7 +554,7 @@
                 Park View Enclave, Jubilee Hills,<br>
                 Hyderabad, Telangana – 500 033.<br>
                 Phone: +91 90522 99299<br>
-                Email: info@amrlegacy.com
+                Email: amrlivingspaces@gmail.com
             </p>
         </div>
 
@@ -456,8 +564,8 @@
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contactus.html">Contact</a></li>
             </ul>
         </div>
 
@@ -466,10 +574,10 @@
             <h3>Follow Us</h3>
 
             <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.facebook.com/amrlivingspaces" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amrlivingspaces/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@AMRLivingSpaces" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/amrlivingspaces/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
@@ -477,20 +585,122 @@
 
     <!-- COPYRIGHT -->
     <div class="footer-bottom">
-        <p>© 2025 AMR Legacy. All Rights Reserved.</p>
-        <p class="tact-credit">
-            Designed by  Tact Advertising
-        </p>
-    </div>
+    <p>© 2025 AMR Legacy. All Rights Reserved.</p>
+
+    <p class="tact-credit">
+        <a href="https://www.tactadvertising.in/" target="_blank" class="tact-link">Designed by
+            <img src="assets/images/tact favicon.png" alt="Tact Icon" class="tact-icon">
+             Tact Advertising
+        </a>
+    </p>
+  </div>
+
 
 </footer>
 
 
 
+<!-- CHATBOT WIDGET -->
+<div class="chatbot-wrapper">
+
+    <!-- Floating Chat Button -->
+    <div class="chatbot-button" id="chatbotToggle">
+      <i class="fas fa-headset"></i>
+   </div>
+
+
+    <!-- Chatbox -->
+    <div class="chatbox" id="chatbox">
+
+        <!-- HEADER -->
+        <div class="chatbox-header">
+            <h4>AMR Legacy Support</h4>
+            <span class="close-chat" id="closeChat">×</span>
+        </div>
+
+        <!-- MAIN OPTIONS -->
+        <div class="chatbox-options" id="chatOptions">
+            <button class="chat-option-btn" onclick="openSiteVisitForm()">📅 Book a Site Visit</button>
+            <button class="chat-option-btn" onclick="openEnquiryForm()">📨 Enquiry Now</button>
+
+            <h5 class="faq-title">Quick Questions</h5>
+
+            <button class="faq-btn" onclick="showAnswer('q1')">What is the project location?</button>
+            <div class="faq-answer" id="q1">Gowrelly Village, Near ORR Exit 10, Hyderabad.</div>
+
+            <button class="faq-btn" onclick="showAnswer('q3')">Do you provide site visits?</button>
+            <div class="faq-answer" id="q3">Yes, we provide guided site visits daily from 9 AM to 6 PM.</div>
+        
+            <button class="faq-btn" onclick="showAnswer('q4')">What amenities are included?</button>
+            <div class="faq-answer" id="q4">Clubhouse, gym, jogging track, landscaped gardens, security, and more.</div>
+         
+
+            <button class="faq-btn" onclick="showAnswer('q2')">What is the price range?</button>
+            <div class="faq-answer" id="q2">Villas start from 1.25 Cr depending on plot size.</div>
+
+
+            <button class="faq-btn" onclick="showAnswer('q5')">How can I book a villa?</button>
+            <div class="faq-answer" id="q5">You can book a villa by contacting us via the enquiry form or calling our sales team.</div>
+        
+        </div>
+
+        <!-- SITE VISIT FORM -->
+        <div class="chat-form" id="siteVisitForm">
+            <span class="form-close" onclick="backToOptions()">← Back</span>
+            <h4>Book a Site Visit</h4>
+            <input type="text" id="svName" placeholder="Your Name *" required>
+            <input type="tel" id="svPhone" placeholder="Phone Number *" required>
+            <input type="email" id="svEmail" placeholder="Email">
+            <input type="date" id="svDate">
+            <textarea id="svMsg" placeholder="Message"></textarea>
+            <button onclick="submitSiteVisit()">Submit</button>
+            <p class="success-msg" id="svSuccess"></p>
+        </div>
+
+        <!-- ENQUIRY FORM -->
+        <div class="chat-form" id="enquiryForm">
+            <span class="form-close" onclick="backToOptions()">← Back</span>
+            <h4>Enquiry Form</h4>
+            <input type="text" id="enqName" placeholder="Your Name *" required>
+            <input type="tel" id="enqPhone" placeholder="Phone Number *" required>
+            <input type="email" id="enqEmail" placeholder="Email">
+            <textarea id="enqMsg" placeholder="Message"></textarea>
+            <button onclick="submitEnquiry()">Submit</button>
+            <p class="success-msg" id="enqSuccess"></p>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!--js files -->
+<!-- JS: Bootstrap -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS: GSAP (for animations) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<!-- JS: AOS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+    offset: 100,
+  });
+</script>
+<!-- JS: HEADER SCROLL -->
 <script src="assets/js/header-scroll.js"></script>
+<!-- JS: HERO IMAGE SLIDER -->
 <script src="assets/js/hero-animation.js"></script>
+<!-- JS: MOBILE MENU TOGGLE -->
+<script src="assets/js/mobiletoggle.js"></script>
+<!-- JS: CHATBOT MAIN FUNCTIONALITY (open/close/forms) -->
+<script src="assets/js/chatbot.js"></script>
+<!-- JS: SITE VISIT FORM SUBMISSION -->
+<script src="assets/js/sitevisitform.js"></script>
+<!-- JS: ENQUIRY FORM SUBMISSION -->
+<script src="assets/js/enquiryform.js"></script>
+
 
 </body>
 </html>

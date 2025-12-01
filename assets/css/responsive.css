@@ -1,0 +1,768 @@
+/* ==================================================================
+   COMPLETE RESPONSIVE CSS – FINAL VERSION */
+
+@media (max-width: 767px) {
+  /* Header & Navigation – Mobile */
+  .header-section { padding: 12px 0 !important; }
+  .header-section.scrolled { padding: 8px 0 !important; }
+  .logo-img { height: 60px !important; }
+  .logo-img.small-logo { height: 47px !important; }
+  .nav-item-link { font-size: 16px !important; }
+  .main-nav { gap: 18px !important; }
+  .main-nav.compressed { gap: 12px !important; }
+
+  /* Site Visit Button */
+  .site-visit-btn {
+    padding: 9px 20px;
+    font-size: 14px;
+  }
+
+  /* Mobile Menu */
+  .mobile-menu { width: 100% !important; }
+  .close-btn { right: 20px; top: 15px; font-size: 34px; }
+
+  /* WhatsApp Float */
+  .whatsapp-float { left: 12px; bottom: 18px; }
+  .whatsapp-float img { width: 52px; height: 52px; }
+
+  /* Overlay Text (Hero text only – not hero background) */
+  .overlay-text h1 { font-size: 3.4rem !important; }
+  .overlay-text h1 span { font-size: 4rem !important; letter-spacing: 5px; }
+  .overlay-text p { font-size: 1.15rem !important; letter-spacing: 1.5px; }
+
+  /* Golden Tree Section */
+  .golden-tree-section { padding: 50px 20px; }
+  .vertical-text { display: none; }
+  .tree-content h1 { font-size: 32px; }
+  .tree-content p { font-size: 16px; }
+
+  /* Foundation Promises */
+  .foundation-circle-title { font-size: 26px; margin-bottom: 40px; }
+  .foundation-circle-wrapper { gap: 25px; flex-wrap: wrap; justify-content: center; }
+  .foundation-circle-item { width: 120px; height: 120px; }
+  .foundation-circle-item h3 { font-size: 14px; }
+
+  /* Legacy / About Section */
+  .legacy-unique {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+    gap: 50px;
+    text-align: center;
+  }
+  .legacy-arc-box,
+  .legacy-content {
+    transform: translateX(0) !important;
+  }
+  .legacy-arc-box {
+    width: 100%;
+    max-width: 380px;
+    height: 420px;
+    margin: 0 auto;
+  }
+  .arc-frame { left: 0; }
+  .legacy-content h2 { font-size: 30px; }
+  .legacy-content p { font-size: 16px; }
+
+  /* Project Highlights */
+  .highlights-modern { padding: 60px 20px; }
+  .highlights-modern-title { font-size: 30px; }
+  .highlights-modern-grid { grid-template-columns: 1fr; gap: 25px; }
+
+  /* Ongoing Project Card */
+  .opc-title { font-size: 30px; }
+  .single-project-card-section { padding: 40px 15px; }
+  .pcf-image { height: 300px; }
+  .pcf-content { padding: 20px; }
+  .pcf-title { font-size: 22px; }
+  .pcf-specs { flex-direction: column; gap: 18px; }
+  .pcf-view-btn { margin-top: 20px; }
+
+  /* Testimonials */
+  .amr-testimonials-scroll { padding: 60px 20px 50px; }
+  .scroll-title { font-size: 32px; }
+  .scroll-card { width: 280px; }
+
+  /* Blogs */
+  .blogs-section { padding: 70px 20px; }
+  .blogs-title { font-size: 36px; }
+  .blogs-grid { grid-template-columns: 1fr; gap: 30px; }
+
+  /* Footer – Fully Mobile Optimized */
+  .amr-footer { padding: 60px 20px 40px; }
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    text-align: center;
+  }
+  .footer-logo img { width: 160px; margin: 0 auto; display: block; }
+  .logo-para { text-align: center; font-size: 15px; line-height: 1.7; }
+  .footer-address h3,
+  .footer-links h3,
+  .footer-social h3 { font-size: 20px; margin-bottom: 16px; }
+  .footer-links ul li a,
+  .footer-address p { font-size: 15px; }
+  .social-icons a {
+    width: 44px; height: 44px; font-size: 19px; margin: 0 8px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding-top: 30px;
+    font-size: 14px;
+  }
+  .tact-credit { justify-content: center; }
+
+  /* Chatbot */
+  .chatbot-button {
+    width: 56px; height: 56px; font-size: 26px;
+    right: 15px; bottom: 15px;
+  }
+  .chatbox {
+    width: 300px;
+    right: 15px;
+    bottom: 85px;
+  }
+}
+
+/* Extra small phones ≤360px */
+@media (max-width: 360px) {
+  .overlay-text h1 { font-size: 3rem !important; }
+  .overlay-text h1 span { font-size: 3.6rem !important; }
+  .scroll-card { width: 260px; }
+  .footer-logo img { width: 140px; }
+  .social-icons a { width: 40px; height: 40px; }
+}
+
+/* ==================================================================
+   TABLET + DESKTOP (768px – 1439px)
+   → EXACTLY SAME AS FULL DESKTOP (1440px+)
+   No changes – your original CSS already looks perfect here
+   ================================================================== */
+@media (min-width: 768px) and (max-width: 1439px) {
+  /* Force original large-desktop values – overrides nothing unwanted */
+  .header-section,
+  .header-section.scrolled { padding: 18px 0; }
+  .header-section.scrolled { padding: 6px 0; }
+  .logo-img { height: 95px; }
+  .logo-img.small-logo { height: 65px; }
+  .main-nav { gap: 35px; }
+  .main-nav.compressed { gap: 18px; }
+  .nav-item-link { font-size: 18px; }
+
+  /* Legacy / About – exactly like 1440px+ */
+  .legacy-unique {
+    grid-template-columns: 1.2fr 1fr;
+    padding: 60px 60px;
+  }
+  .legacy-arc-box {
+    width: 450px; height: 550px;
+    transform: translateX(-55px);
+  }
+  .legacy-content { transform: translateX(-80px); }
+  .arc-frame { left: -30px; }
+
+  /* Footer – keep 4-column grid like large desktop */
+  .footer-top { grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 50px; }
+  .footer-bottom { flex-direction: row; justify-content: space-between; }
+}
+
+
+/* ============================================================= */
+/* 1024px – 1439px → Force EXACT same look as 1440px+ desktop   */
+/* Only Foundation section + Header/Navbar fixed                */
+/* ============================================================= */
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+  /* ──────────────────────────────
+     1. FOUNDATION PROMISES – exactly like 1440px+
+     ────────────────────────────── */
+  .foundation-circle-wrapper {
+    gap: 20px !important;                    /* same as large desktop */
+    flex-wrap: nowrap !important;            /* never wrap */
+    justify-content: center !important;
+  }
+  .foundation-circle-item {
+    width: 150px !important;
+    height: 160px !important;
+  }
+  .foundation-circle-item h3 {
+    font-size: 18px !important;             /* exact same size as 1440px+ */
+  }
+  .foundation-circle-title {
+    font-size: 42px !important;             /* same big title */
+  }
+
+
+  /* ──────────────────────────────
+     2. HEADER + NAVBAR – exactly like 1440px+ (one perfect row)
+     ────────────────────────────── */
+  .header-section .container,
+  .header-section .row,
+  .header-section .col-lg-12 {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 15px !important;
+  }
+
+  /* Logo – exact same size as large desktop */
+  .logo-img {
+    height: 95px !important;
+    flex-shrink: 0;
+  }
+  .logo-img.small-logo {
+    height: 65px !important;
+  }
+
+  /* Navigation – generous gap, full font size, never wraps */
+  .main-nav {
+    display: flex !important;
+    gap: 42px !important;           /* exact same as your 1440px+ */
+    flex-wrap: nowrap !important;
+    align-items: center;
+  }
+
+  .main-nav.compressed {
+    gap: 28px !important;           /* still comfortable when compressed */
+  }
+
+  .nav-item-link {
+    font-size: 18px !important;
+    white-space: nowrap !important;
+    line-height: 1 !important;
+  }
+
+  /* Site Visit button – full size */
+  .site-visit-btn {
+    padding: 12px 28px !important;
+    font-size: 16px !important;
+    white-space: nowrap !important;
+    flex-shrink: 0;
+  }
+
+  /* Scrolled header – same padding as large desktop */
+  .header-section.scrolled {
+    padding: 6px 0 !important;
+  }
+}
+
+
+
+
+
+/* ============================================================= */
+/* ONLY THE FIXES YOU ASKED FOR – NOTHING ELSE CHANGED         */
+/* ============================================================= */
+
+/* 1. MOBILE FOOTER – Align all columns to left (not center) + reduce big gaps */
+@media (max-width: 767px) {
+  .footer-top {
+    text-align: left !important;
+    align-items: start !important;
+  }
+  .footer-logo { text-align: center; } /* logo stays centered – as you want */
+  .footer-address,
+  .footer-links,
+  .footer-social {
+    text-align: left !important;
+  }
+  .footer-bottom {
+    gap: 0px !important;  /* reduces big gap between copyright & designed by */
+  }
+}
+
+/* ============================================================= */
+/* TABLET ONLY (768px – 1023px) – EXACT LAYOUT YOU WANT        */
+/* ============================================================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 40px;
+    text-align: left;
+    align-items: start;
+  }
+
+  /* Row 1 → Logo + Description (left) | Quick Links (right) */
+  .footer-logo    { grid-column: 1; }
+  .footer-links   { grid-column: 2; grid-row: 1; }
+
+  /* Row 2 → Address (left edge) | Follow Us (right edge) */
+  .footer-address { grid-column: 1; grid-row: 2; }
+  .footer-social  { grid-column: 2; grid-row: 2;  }
+
+  /* Optional: little visual polish */
+  .footer-logo img { width: 180px; margin-bottom: 12px; }
+  .logo-para { text-align: left; font-size: 15px; line-height: 1.7; }
+
+  /* Reduce big gap between copyright and "designed by" */
+  .footer-bottom {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+/* 3. FIX HEADER NAV at 1024px – nav items dropping to second line too early */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .main-nav { gap: 22px !important; }           /* was 35px → now fits in one line */
+  .main-nav.compressed { gap: 16px !important; }
+  .nav-item-link { font-size: 17px !important; } /* tiny reduction – still looks good */
+}
+
+
+/* ============================================================= */
+/* TABLET ONLY (768px – 1023px): Force Legacy = Exactly like Mobile */
+/* Mobile and Desktop ≥1024px remain 100% original & perfect      */
+/* ============================================================= */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .legacy-unique {
+    grid-template-columns: 1fr !important;
+    padding: 50px 20px !important;
+    gap: 50px !important;
+    text-align: center !important;
+  }
+
+  .legacy-arc-box,
+  .legacy-content {
+    transform: translateX(0) !important;
+  }
+
+  .legacy-arc-box {
+    width: 100% !important;
+    max-width: 380px !important;
+    height: 420px !important;
+    margin: 0 auto !important;
+  }
+
+  .arc-frame { left: 0 !important; }
+
+  .legacy-content h2 { font-size: 30px !important; }
+}
+
+
+
+
+
+
+
+/* ============================================================= */
+/* ABOUT PAGE RESPONSIVE CSS */
+/* ==================================================================
+   ABOUT PAGE – PERFECT RESPONSIVE (Matches Index Page Behavior)
+   ================================================================== */
+
+/* ——————————————— MOBILE ≤767px ——————————————— */
+@media (max-width: 767px) {
+  /* Hero Banner */
+  .about-banner { height: 70vh; }
+  .about-banner-content h1 { font-size: 2.8rem !important; letter-spacing: 2px; }
+
+  /* Our Story */
+  .story-container { padding: 0 20px; }
+  .story-container h2 { font-size: 28px; }
+  .story-container p { font-size: 16px; text-align: left; }
+
+  /* Mission & Vision – Full stacked */
+  .mv-unique-section { min-height: auto; padding: 0px 0; }
+  .split-container { flex-direction: column; height: auto; }
+  .panel { width: 100% !important; min-height: 60vh; padding: 50px 20px; clip-path: none; }
+  .panel.left { transform: translateX(0) !important; animation: none; background: #203370; }
+  .panel.right { transform: translateX(0) !important; animation: none; background: #203370; }
+  .center-line, .center-icon { display: none; }
+  .content-box h2 { font-size: 38px !important; }
+  .content-box p { font-size: 16px; }
+
+  /* Core Values */
+  .core-values-section { padding: 60px 0; }
+  .container { padding: 0 20px; }
+  .section-header h2 { font-size: 36px !important; }
+  .section-header p { font-size: 16px; }
+  .values-grid { grid-template-columns: 1fr; gap: 30px; }
+  .value-card { padding: 35px 25px; }
+
+  /* Visionaries */
+  .visionaries-section,
+  .visionary-simple { padding: 70px 0; }
+  .visionaries-container,
+  .vs-wrapper { padding: 0 20px; }
+  .visionaries-title,
+  .vs-title h2 { font-size: 36px !important; text-align: center; }
+  .vs-box { padding: 30px 20px; }
+
+  /* Milestones */
+  .milestone-box { padding: 20px; text-align: center; }
+  .count { font-size: 36px; }
+}
+
+/* ——————————————— TABLET 768px – 1023px ——————————————— */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .about-banner { height: 70vh; }
+  .about-banner-content h1 { font-size: 3.6rem; }
+
+  .story-container { padding: 0 40px; }
+  .story-container h2 { font-size: 34px; }
+
+  /* Mission & Vision – stacked like mobile */
+  .split-container { flex-direction: column; height: auto; }
+  .panel { width: 100% !important; padding: 70px 50px; clip-path: none; }
+  .panel.left { transform: none !important; background: #203370; }
+  .panel.right { transform: none !important; background: #2a4596; }
+  .center-line, .center-icon { display: none; }
+  .content-box h2 { font-size: 46px; }
+
+  .core-values-section { padding: 80px 0; }
+  .section-header h2 { font-size: 46px; }
+  .values-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
+
+  .visionaries-title,
+  .vs-title h2 { font-size: 42px; }
+}
+
+/* ——————————————— LAPTOP 1024px – 1439px ——————————————— */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  /* Allow split layout but make it safe */
+  .split-container { height: 90vh; }
+  .panel { padding: 60px 50px; }
+  .content-box h2 { font-size: 48px; }
+
+  /* Core Values – 3 columns */
+  .values-grid { grid-template-columns: repeat(3, 1fr); }
+
+  /* Keep center line & icon visible */
+  .center-line, .center-icon { display: block; }
+}
+
+/* PERMANENT FIX: All milestone boxes EXACT SAME HEIGHT forever   */
+.milestone-box {
+    height: 100% !important;        /* this is the magic line */
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+
+
+
+/* ============================================================= */
+/* projects responsive css */
+
+/* ——————————————— MOBILE ≤767px ——————————————— */
+@media (max-width: 767px) {
+  .project-hero-carousel, .carousel-slide { height: 100vh; }
+  .stats-strip { padding: 20px 25px; flex-direction: row; gap: 5px; }
+  .stat h3 { font-size: 24px; }
+  .stat span { font-size: 13px; }
+  .carousel-btn { font-size: 20px; padding: 8px 12px; }
+  .carousel-dots { bottom: 20px; }
+  .hero-text { left: 0%; top: 45%; width: 50%; }
+  .typing-text { font-size: 28px !important; white-space: normal; }
+
+  .location-alt-section h2 { font-size: 28px; left: 15%; transform: translateX(-50%); }
+  .location-alt-section h2::after { width: 200px; }
+  .location-grid { grid-template-columns: 1fr; gap: 40px; padding: 0 20px; }
+  .loc-item { flex-direction: column; text-align: center; }
+  .loc-item img { width: 120px; height: 120px; }
+
+  .highlight-title, .gallery-heading, .mp-title, .fp-main-heading, .clubhouse-title, .spec-heading, .location-heading { font-size: 28px !important; }
+  .highlight-title::after, .gallery-heading::after, .mp-title::after, .fp-main-heading::after, .clubhouse-title::after, .spec-heading::after, .location-heading::after { width: 180px !important; }
+
+  .highlights-wrapper { grid-template-columns: 1fr; gap: 30px; }
+  .highlights-image img { width: 100%; height: 400px; }
+  .highlights-image::after { font-size: 10px; padding: 6px 20px; }
+  .highlight-list { grid-template-columns: 1fr; }
+  .featured-stats { flex-direction: column; gap: 20px; text-align: center; }
+
+  .parallax { height: 60vh; background-attachment: scroll; }
+  .horizontal-form { flex-direction: column; padding: 15px; }
+  .horizontal-form input { min-width: 100%; }
+
+  .carousel-item img { height: 50vh; }
+  .fp-img { height: 300px; }
+  .amenities-grid, .spec-grid, .club-feature-section { grid-template-columns: 1fr; padding: 0 20px; gap: 20px; }
+  .club-feature-row { min-height: auto; padding: 20px; }
+  .club-feature-img img { height: 250px; }
+  .location-map-container img { max-height: 500px; }
+}
+
+/* ——————————————— TABLET 768px – 1023px ——————————————— */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .project-hero-carousel, .carousel-slide { height: 95vh; }
+  .stats-strip { padding: 20px 40px; gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .hero-text { left: 50%; width: 80%; }
+  .typing-text { font-size: 36px; }
+
+  .location-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 60px; padding: 0 30px; }
+  .loc-item img { width: 130px; height: 130px; }
+
+  .highlights-wrapper { grid-template-columns: 1fr; }
+  .highlights-image img { width: 100%; height: 500px; }
+
+  .amenities-grid, .spec-grid { grid-template-columns: repeat(2, 1fr); }
+  .club-feature-section { grid-template-columns: 1fr 1fr; gap: 20px; }
+  .fp-img { min-width: 70vw; height: 380px; }
+  .parallax { height: 70vh; }
+}
+
+/* ——————————————— LAPTOP 1024px – 1439px ——————————————— */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .stats-strip { padding: 20px 60px; }
+  .typing-text { font-size: 42px; }
+  .location-grid { gap: 40px 70px; }
+  .highlights-image img { width: 100%; max-width: 600px; height: 580px; }
+  .highlight-list { gap: 20px 40px; }
+  .featured-stats { gap: 40px; }
+  .fp-img { height: 400px; }
+  .clubhouse-image-wrapper img { height: 560px; }
+  .club-feature-row { min-height: 480px; }
+  .club-feature-img img { height: 280px; }
+}
+
+
+/* ONLY THE EXACT FIXES YOU ASKED FOR – NOTHING ELSE CHANGED    */
+
+/* 1. Hero typing text – perfectly fit & responsive on all screens */
+@media (max-width: 1023px) {
+  .hero-text {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 90%;
+    text-align: center;
+  }
+  .typing-text {
+    font-size: 28px !important;
+    white-space: normal !important;
+    line-height: 1.3;
+    width: 100% !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .typing-text { font-size: 38px !important; }
+}
+
+/* 2. Project Highlights stats – always in one single line on mobile */
+@media (max-width: 767px) {
+  .featured-stats {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 8px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .featured-stats::-webkit-scrollbar { display: none; }
+  .stat-item { flex: 0 0 auto; min-width: 100px; }
+}
+
+/* 3. Location heading – perfectly centered on ALL screens up to 1443px */
+@media (max-width: 1443px) {
+  .location-alt-section h2,
+  .location-heading {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    text-align: center !important;
+  }
+  .location-alt-section h2::after,
+  .location-heading::after {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}
+
+/* 4. Floor Plans – only ONE image visible on Mobile & Tablet */
+@media (max-width: 1023px) {
+  .fp-img {
+    min-width: 100% !important;
+    margin-right: 0 !important;
+  }
+  .fp-slider {
+    width: 100% !important;
+  }
+}
+
+/* 5. Gallery section – keep your original big height (different from clubhouse) */
+.carousel-item img {
+  height: 100vh !important;   /* your original – untouched */
+}
+
+/* 6. Clubhouse image – different from gallery (your original height) */
+.clubhouse-image-wrapper img {
+  height: 620px !important;   /* your original – untouched */
+}
+
+/* 7. Parallax contact form – perfectly aligned & fitted on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .horizontal-form {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 680px;
+    gap: 14px;
+  }
+  .horizontal-form input { 
+    flex: 1 1 280px; 
+    min-width: 280px;
+  }
+  .horizontal-form button {
+    flex: 1 1 160px;
+    min-width: 160px;
+  }
+}
+
+/* ============================================================= */
+/* ONLY GALLERY & CLUBHOUSE – PERFECT DIFFERENT SIZES PER SCREEN */
+
+@media (max-width: 767px) {
+  /* Gallery – tall & full width (your preference) */
+  .carousel-item img {
+    height: 65vh !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  /* Clubhouse – shorter & controlled height (different from gallery) */
+  .clubhouse-image-wrapper img {
+    height: 420px !important;
+    width: 100% !important;
+    object-fit: cover;
+  }
+}
+
+/* TABLET 768px – 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .carousel-item img {
+    height: 75vh !important;
+  }
+  .clubhouse-image-wrapper img {
+    height: 500px !important;
+  }
+}
+
+/* LAPTOP 1024px – 1439px */
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .carousel-item img {
+    height: 90vh !important;
+  }
+  .clubhouse-image-wrapper img {
+    height: 580px !important;
+  }
+}
+
+/* DESKTOP 1440px+ → your original values remain perfect */
+@media (min-width: 1440px) {
+  .carousel-item img {
+    height: 100vh !important;     /* your original */
+  }
+  .clubhouse-image-wrapper img {
+    height: 620px !important;     /* your original */
+  }
+}
+
+/* LOCATION MAP HEADING – 100% CENTERED ON EVERY SCREEN – GUARANTEED */
+.location-map-section .location-heading {
+  display: block !important;
+  text-align: center !important;
+  position: relative !important;
+  left: auto !important;
+  transform: none !important;
+  margin: 0 auto 30px auto !important;
+  width: fit-content !important;
+}
+
+.location-map-section .location-heading::after {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+
+
+
+
+/* Hide on desktop */
+.mobile-enquiry-btn {
+  display: none;
+}
+
+/* Show only in mobile menu */
+@media (max-width: 768px) {
+  .mobile-enquiry-btn {
+    display: block !important;
+    background: #203370;
+    color: #fff !important;
+    padding: 8px 14px;      /* ↓ reduced size */
+    border-radius: 5px;     /* ↓ slightly smaller radius */
+    margin-top: 8px;
+    width: auto !important;  
+    font-weight: 600;
+    font-size: 14px;        /* ↓ smaller text */
+    text-align: center;
+  }
+
+  .mobile-enquiry-btn:hover {
+    background: #d1a32c;
+  }
+}
+
+
+/* SOCIAL MEDIA FLOATING BAR */
+@media (max-width: 480px) {
+  .social-fixed-bar {
+    top: auto;
+    bottom: 200px;
+    left: 10px;
+    transform: none;
+    gap: 12px;
+  }
+
+  .social-fixed-bar a {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+/* ——————————————— MOBILE ≤767px → Horizontal Button (Bottom Right) ——————————————— */
+@media (max-width: 767px) {
+.brochure-btn-fixed {
+    position: fixed;
+    top: 53%;
+    right: 0;
+    transform: translateY(-50%);
+    transform-origin: right center;
+
+    background: #d1a32c;
+    color: #fff !important;
+    padding: 12px 6px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none !important;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    border-radius: 8px 0 0 8px;
+    box-shadow: -4px 4px 15px rgba(0,0,0,0.25);
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Icon inside (optional – you can add font-awesome or svg) */
+.brochure-btn-fixed::before {
+    content: "↓";
+    font-size: 20px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+}

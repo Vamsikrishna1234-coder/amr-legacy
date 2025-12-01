@@ -1,55 +1,108 @@
-// script.js  (replace your current one with this)
-const slides = document.querySelectorAll('.bg-slide');
-let current = 0;
-const stayDuration = 4200; // how long each image stays as background
+ const slides = document.querySelectorAll('.image-slide');
+    const dots = document.querySelectorAll('.progress-dot');
+    const slideNumber = document.querySelector('.slide-number');
 
-function showNext() {
-  slides.forEach(s => s.classList.remove('active'));
+    let currentIndex = 0;
+    const slideInterval = 3000;
+    let autoplayTimer;
 
-  // Reset positions instantly
-  gsap.set('.from-top',   { y: "-110vh", rotation: 8, opacity: 0 });
-  gsap.set('.from-right', { x: "110vw",  rotation: -10, opacity: 0 });
-  gsap.set('.from-left',  { x: "-110vw", rotation: 10, opacity: 0 });
+    // Circular expand animation for all slides
+    function revealSlide(index) {
+      const isMobile = window.innerWidth < 768;
+      
+      // Remove active from all
+      slides.forEach(s => s.classList.remove('active'));
+      dots.forEach(d => d.classList.remove('active'));
 
-  const next = slides[current];
+      const currentSlide = slides[index];
+      currentSlide.classList.add('active');
+      dots[index].classList.add('active');
 
-  // SAME fast, dramatic timing for ALL directions
-  const commonTl = gsap.timeline({
-    onComplete: () => {
-      next.classList.add('active');
-      current = (current + 1) % slides.length;
-      setTimeout(showNext, stayDuration);
+      // Update slide number
+      slideNumber.textContent = `0${index + 1}`;
+
+      if (isMobile) {
+        // Simple fade for mobile
+        gsap.fromTo(currentSlide, 
+          { clipPath: 'circle(0% at 50% 50%)' },
+          { clipPath: 'circle(100% at 50% 50%)', duration: 1.2 }
+        );
+      } else {
+        // Desktop: Circular expand from center
+        gsap.fromTo(currentSlide,
+          { clipPath: 'circle(0% at 50% 50%)' },
+          { 
+            clipPath: 'circle(100% at 50% 50%)',
+            duration: 1.4,
+            ease: 'expo.inOut'
+          }
+        );
+      }
+
+      // Animate slide number
+      gsap.fromTo(slideNumber,
+        { scale: 1.5, opacity: 0 },
+        { scale: 1, opacity: 0.25, duration: 0.6, ease: 'back.out(1.7)' }
+      );
     }
-  });
 
-  if (next.classList.contains('from-top')) {
-    commonTl.to(next, {
-      y: 0,
-      rotation: 0,
-      opacity: 1,
-      duration: 1.6,
-      ease: "elastic.out(1.2, 0.35)"   // super bouncy & fast drop
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      revealSlide(currentIndex);
+    }
+
+    function goToSlide(index) {
+      if (index === currentIndex) return;
+      currentIndex = index;
+      revealSlide(currentIndex);
+      resetAutoplay();
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayTimer);
+      autoplayTimer = setInterval(nextSlide, slideInterval);
+    }
+
+    // Dot click handlers
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const slideIndex = parseInt(dot.getAttribute('data-slide'));
+        goToSlide(slideIndex);
+      });
     });
 
-  } else if (next.classList.contains('from-right')) {
-    commonTl.to(next, {
-      x: 0,
-      rotation: 0,
-      opacity: 1,
-      duration: 1.25,                   // faster because it’s horizontal
-      ease: "expo.out"                  // explosive speed
+    // Initial animation and start autoplay immediately
+    window.addEventListener('load', () => {
+      // Trigger first transition immediately
+      setTimeout(() => {
+        revealSlide(0);
+      }, 100);
+
+      gsap.from('.progress-container', {
+        opacity: 0,
+        y: 20,
+        duration: 0.8,
+        delay: 0.3
+      });
+
+      gsap.from('.slide-number', {
+        opacity: 0,
+        scale: 2,
+        duration: 0.8,
+        delay: 0.2
+      });
+
+      // Start autoplay
+      setTimeout(() => {
+        autoplayTimer = setInterval(nextSlide, slideInterval);
+      }, slideInterval);
     });
 
-  } else if (next.classList.contains('from-left')) {
-    commonTl.to(next, {
-      x: 0,
-      rotation: 0,
-      opacity: 1,
-      duration: 1.25,
-      ease: "expo.out"
+    // Pause on hover
+    document.querySelector('.hero-container').addEventListener('mouseenter', () => {
+      clearInterval(autoplayTimer);
     });
-  }
-}
 
-// Start
-window.onload = () => setTimeout(showNext, 600);
+    document.querySelector('.hero-container').addEventListener('mouseleave', () => {
+      autoplayTimer = setInterval(nextSlide, slideInterval);
+    });

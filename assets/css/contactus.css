@@ -2,7 +2,7 @@
 .contact-hero {
   position: relative;
   height: 70vh;
-  background: url('assets/images/contact-hero.jpg') center/cover no-repeat;
+  background: url('/assets/images/abouthero\ amr.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,7 @@
 .contact-hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(36, 36, 36, 0.397);
 }
 
 .contact-hero-content {

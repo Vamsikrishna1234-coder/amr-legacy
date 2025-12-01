@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amr Legacy</title>
+  <title>Projects AmrLegacy</title>
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -12,6 +12,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/projects.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <!--website icon-->
+  <link rel="icon" type="image/png" href="assets/images/Amr favicon.png">
 </head>
 <body>
 
@@ -21,7 +24,7 @@
     <div class="d-flex align-items-center justify-content-between gap-3">
 
       <!-- Logo -->
-      <a href="#" class="header-logo d-flex align-items-center">
+      <a href="index.html" class="header-logo d-flex align-items-center">
         <img src="assets/images/amr-logo.png" alt="Logo" class="logo-img">
       </a>
 
@@ -31,20 +34,57 @@
           <li class="nav-item"><a href="index.html" class="nav-link nav-item-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link nav-item-link">About Us</a></li>
           <li class="nav-item"><a href="projects.html" class="nav-link nav-item-link">Projects</a></li>
-          <li class="nav-item"><a href="#" class="nav-link nav-item-link">Blogs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link nav-item-link">Contact Us</a></li>
+          <li class="nav-item"><a href="blogs.html" class="nav-link nav-item-link">Blogs</a></li>
+          <li class="nav-item"><a href="contactus.html" class="nav-link nav-item-link">Contact Us</a></li>
         </ul>
       </nav>
 
       <!-- Right Side -->
-      <a href="#" class="btn btn-outline-success d-none d-lg-block site-visit-btn">Book a Site Visit</a>
+      <a href="contactus.html" class="btn site-visit-btn d-none d-lg-block">Enquiry Now</a>
 
       <!-- Mobile Menu Toggle -->
-      <button class="btn d-lg-none border-0 fs-4 text-white">&#9776;</button>
+      <button class="btn d-lg-none border-0 fs-4 text-black">&#9776;</button>
     </div>
 
   </div>
 </header>
+
+
+
+<!-- MOBILE MENU PANEL -->
+<div id="mobileMenu" class="mobile-menu">
+    <button class="mobile-close">&times;</button>
+
+    <ul class="mobile-nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="contactus.html" class="mobile-enquiry-btn">Enquiry Now</a></li>
+    </ul>
+</div>
+
+
+<!-- SOCIAL MEDIA FLOATING BAR -->
+<div class="social-fixed-bar">
+    <a href="https://www.facebook.com/amrlivingspaces" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/amrlivingspaces/" target="_blank" class="ig"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/@AMRLivingSpaces" target="_blank" class="yt"><i class="fab fa-youtube"></i></a>
+    <a href="https://x.com/AmrLiving" target="_blank" class="tw"><i class="fab fa-twitter"></i></a>
+</div>
+
+
+<a href="assets/images/AMR_Brochure_v2.pdf" download class="brochure-btn-fixed">
+     Download Brochure
+</a>
+
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/919052299299" target="_blank" class="whatsapp-float">
+    <img src="assets/images/whatsapp icon.avif" alt="WhatsApp">
+</a>
+
 
 
 <!--herosection-->
@@ -56,7 +96,7 @@
 
   <div class="carousel-container">
     <div class="carousel-slide active">
-      <img src="assets/images/home2.png" />
+      <img src="assets/images/amr project1.jpg" />
 
       <!-- TEXT OVERLAY -->
       <div class="hero-text">
@@ -65,11 +105,11 @@
     </div>
 
     <div class="carousel-slide">
-      <img src="assets/images/tree image .png" />
+      <img src="assets/images/amr project2.jpg" />
     </div>
 
     <div class="carousel-slide">
-      <img src="assets/images/home2.png" />
+      <img src="assets/images/amr project1.jpg" />
     </div>
   </div>
 
@@ -101,7 +141,7 @@
 
       <!-- 1 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/ORR.jpg" alt="">
+        <img src="assets/images/ORR.jpg" alt="ORR image">
         <div class="loc-content">
           <h3>ORR Taramatipet Exit No. 10</h3>
           <p>2 Mins</p>
@@ -110,7 +150,7 @@
 
       <!-- 2 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/johnson schl.jpg" alt="">
+        <img src="assets/images/johnson schl.jpg" alt="johnson school img">
         <div class="loc-content">
           <h3>Johnson Grammar School (Kuntloor)</h3>
           <p>5 Mins (Proposed)</p>
@@ -119,7 +159,7 @@
 
       <!-- 3 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/ORR.jpg" alt="">
+        <img src="assets/images/ORR.jpg" alt="ORR Vijayawada img">
         <div class="loc-content">
           <h3>ORR Vijayawada Exit No. 11</h3>
           <p>5 Mins</p>
@@ -128,7 +168,7 @@
 
       <!-- 4 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/hyderabad metro.jpg" alt="">
+        <img src="assets/images/hyderabad metro.jpg" alt="hyderabad metro img">
         <div class="loc-content">
           <h3>Hayathnagar Metro Station</h3>
           <p>10 Mins(Proposed)
@@ -138,7 +178,7 @@
 
       <!-- 5 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/ORR.jpg" alt="">
+        <img src="assets/images/ORR.jpg" alt="ORR warangal img">
         <div class="loc-content">
           <h3>ORR Warangal Exit No. 9</h3>
           <p>5 Mins</p>
@@ -147,7 +187,7 @@
 
       <!-- 6 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/nagole metro.avif" alt="">
+        <img src="assets/images/nagole metro.avif" alt="nagole metro img">
         <div class="loc-content">
           <h3>Nagole Metro Station</h3>
           <p>20 Mins</p>
@@ -156,7 +196,7 @@
 
       <!-- 7 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/indu school.jpg" alt="">
+        <img src="assets/images/indu school.jpg" alt="indu school img ">
         <div class="loc-content">
           <h3>Indu International School</h3>
           <p>10 Mins</p>
@@ -165,7 +205,7 @@
 
       <!-- 8 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/kamineni hsptl.jpeg" alt="">
+        <img src="assets/images/kamineni hsptl.jpeg" alt="kamineni hospital img">
         <div class="loc-content">
           <h3>Kamineni Hospital</h3>
           <p>20 Mins</p>
@@ -174,7 +214,7 @@
 
       <!-- 9 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/indu school.jpg" alt="">
+        <img src="assets/images/indu school.jpg" alt="indu aaranya img">
         <div class="loc-content">
           <h3>Indu Aaranya</h3>
           <p>10 Mins</p>
@@ -183,7 +223,7 @@
 
       <!-- 10 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/infosys.jpg" alt="">
+        <img src="assets/images/infosys.jpg" alt="infosys img">
         <div class="loc-content">
           <h3>Pocharam SEZ (Infosys)</h3>
           <p>20 Mins</p>
@@ -192,7 +232,7 @@
 
       <!-- 11 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/ramojifilm city.webp" alt="">
+        <img src="assets/images/ramojifilm city.webp" alt="ramoji film city img">
         <div class="loc-content">
           <h3>Ramoji Film City</h3>
           <p>10 Mins</p>
@@ -201,7 +241,7 @@
 
       <!-- 12 -->
       <div class="loc-item" data-aos="fade-up">
-        <img src="assets/images/lbnagar metro.avif" alt="">
+        <img src="assets/images/lbnagar metro.avif" alt="lbnagar metro img">
         <div class="loc-content">
           <h3>LB Nagar Metro</h3>
           <p>20 Mins</p>
@@ -221,7 +261,7 @@
 
       <!-- LEFT SIDE IMAGE -->
       <div class="highlights-image">
-        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800" alt="Luxury Villa">
+        <img src="assets/images/amr project2.jpg" alt="Luxury Villa">
       </div>
 
       <!-- RIGHT SIDE HIGHLIGHTS -->
@@ -266,15 +306,17 @@
 <!--parallelex-->
 <section class="parallax">
   <div class="form-wrapper">
+      <form class="horizontal-form" action="sendmail.php" method="POST">
 
-    <form class="horizontal-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Email Address" required>
-      <input type="text" placeholder="Phone Number" required>
-      <input type="text" placeholder="Message">
-      <button type="submit">Submit</button>
-    </form>
+          <input type="hidden" name="form_type" value="Projects Page Enquiry">
 
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <input type="tel" name="phone" placeholder="Phone Number" required>
+          <input type="text" name="message" placeholder="Message">
+
+          <button type="submit">Submit</button>
+      </form>
   </div>
 </section>
 
@@ -288,31 +330,31 @@
     <div class="carousel-inner">
 
       <div class="carousel-item active">
-        <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?w=2000" class="d-block w-100">
+        <img src="assets/images/amr hero3.jpg" class="d-block w-100">
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1501877008226-4fca48ee50c1?w=2000" class="d-block w-100">
+        <img src="assets/images/amr hero1.jpg" class="d-block w-100">
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=2000" class="d-block w-100">
+        <img src="assets/images/ganesh idol1 amr.jpg" class="d-block w-100">
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1472220625704-91e1462799b2?w=2000" class="d-block w-100">
+        <img src="assets/images/walkingtrack amr.jpg" class="d-block w-100">
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=2000" class="d-block w-100">
+        <img src="assets/images/box cricket amr.jpg" class="d-block w-100">
       </div>
 
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1501877008226-4fca48ee50c1?w=2000" class="d-block w-100">
+        <img src="assets/images/ganesh idol amr.jpg" class="d-block w-100">
       </div>
       
       <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=2000" class="d-block w-100">
+        <img src="assets/images/amr project2.jpg" class="d-block w-100">
       </div>
 
     </div>
@@ -346,8 +388,8 @@
     </p>
 
     <!-- Click → open in new tab with zoom support -->
-    <a href="assets/images/tree image .png" target="_blank" class="mp-card">
-      <img src="assets/images/tree image .png" alt="Masterplan Layout">
+    <a href="assets/images/AMR-Master-plan.jpg" target="_blank" class="mp-card">
+      <img src="assets/images/AMR-Master-plan.jpg" alt="Masterplan Layout">
     </a>
 
   </div>
@@ -412,14 +454,14 @@
   <!-- FULL WIDTH IMAGE (CLICK TO OPEN POPUP) -->
   <a href="#clubhouse-popup">
     <div class="clubhouse-image-wrapper">
-      <img src="assets/images/clubhouse amr.jpg" alt="clubhouse">
+      <img src="assets/images/amr clubhouse1.jpg" alt="clubhouse">
     </div>
   </a>
 
   <!-- POPUP IMAGE VIEWER -->
   <div id="clubhouse-popup" class="popup">
     <a href="#close" class="close-btn">&times;</a>
-    <img src="assets/images/clubhouse amr.jpg" class="popup-img">
+    <img src="assets/images/amr clubhouse1.jpg" class="popup-img">
   </div>
 
   <!-- AMENITIES HEADER -->
@@ -498,7 +540,7 @@
   <!-- GYM -->
   <div class="club-feature-row">
     <div class="club-feature-img">
-      <img src="assets/images/infosys.jpg" alt="State-of-the-Art Gym" data-full="assets/images/infosys.jpg">
+      <img src="assets/images/gym amr.jpg" alt="State-of-the-Art Gym" data-full="assets/images/infosys.jpg">
     </div>
     <div class="club-feature-text">
       <h3>State-of-the-Art Gym</h3>
@@ -512,7 +554,7 @@
   <!-- INDOOR GAMES -->
   <div class="club-feature-row reverse">
     <div class="club-feature-img">
-      <img src="assets/images/indu school.jpg" alt="Indoor Games Arena" data-full="assets/images/indu school.jpg">
+      <img src="assets/images/indoorgames amr.jpg" alt="Indoor Games Arena" data-full="assets/images/indu school.jpg">
     </div>
     <div class="club-feature-text">
       <h3>Indoor Games Arena</h3>
@@ -526,7 +568,7 @@
   <!-- YOGA HALL -->
   <div class="club-feature-row">
     <div class="club-feature-img">
-      <img src="assets/images/hyderabad metro.jpg" alt="Yoga & Meditation Hall" data-full="assets/images/hyderabad metro.jpg">
+      <img src="assets/images/amr yoga.jpg" alt="Yoga & Meditation Hall" data-full="assets/images/hyderabad metro.jpg">
     </div>
     <div class="club-feature-text">
       <h3>Yoga & Meditation Hall</h3>
@@ -672,22 +714,28 @@
 
 
 <!--Location map section-->
-<section class="location-map-section">
+<section class="location-map-section" data-aos="fade-up">
+
   <h2 class="location-heading">Location Map</h2>
 
   <div class="location-map-container">
-    <img src="assets/images/AMR_Location.jpg" alt="Location Map">
+    <a href="assets/images/AMR_Location.jpg" target="_blank">
+      <img src="assets/images/AMR_Location.jpg" alt="Location Map">
+    </a>
   </div>
 
-  <div class="location-address">
+  <div class="location-address" data-aos="fade-up" data-aos-delay="200">
     <h3>Project Address</h3>
     <h5>
-      AMR Legacy Villas,ORR Exit-10 Gowrelly(V)<br>
+      AMR Legacy Villas, ORR Exit-10 Gowrelly(V) <br>
       Abdullapurmet(M), Near Nagole, Hyderabad, <br>
-      Telangana - 500 033.
-      </h5>
+      Telangana - 500033.
+    </h5>
   </div>
+
 </section>
+
+
 
 
 <!--footer section-->
@@ -711,7 +759,7 @@
                 Park View Enclave, Jubilee Hills,<br>
                 Hyderabad, Telangana – 500 033.<br>
                 Phone: +91 90522 99299<br>
-                Email: info@amrlegacy.com
+                Email: amrlivingspaces@gmail.com
             </p>
         </div>
 
@@ -721,8 +769,8 @@
             <ul>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="projects.html">Projects</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contactus.html">Contact</a></li>
             </ul>
         </div>
 
@@ -730,11 +778,11 @@
         <div class="footer-social">
             <h3>Follow Us</h3>
 
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             <div class="social-icons">
+                <a href="https://www.facebook.com/amrlivingspaces" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/amrlivingspaces/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@AMRLivingSpaces" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.linkedin.com/company/amrlivingspaces/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
 
@@ -742,23 +790,106 @@
 
     <!-- COPYRIGHT -->
     <div class="footer-bottom">
-        <p>© 2025 AMR Legacy. All Rights Reserved.</p>
-        <p class="tact-credit">
-            Designed by  Tact Advertising
-        </p>
-    </div>
+    <p>© 2025 AMR Legacy. All Rights Reserved.</p>
+
+    <p class="tact-credit">
+        <a href="https://www.tactadvertising.in/" target="_blank" class="tact-link">Designed by
+            <img src="assets/images/tact favicon.png" alt="Tact Icon" class="tact-icon">
+             Tact Advertising
+        </a>
+    </p>
+  </div>
 
 </footer>
+
+
+<!-- CHATBOT WIDGET -->
+<div class="chatbot-wrapper">
+
+    <!-- Floating Chat Button -->
+    <div class="chatbot-button" id="chatbotToggle">
+        💬
+    </div>
+
+    <!-- Chatbox -->
+    <div class="chatbox" id="chatbox">
+
+        <!-- HEADER -->
+        <div class="chatbox-header">
+            <h4>AMR Legacy Support</h4>
+            <span class="close-chat" id="closeChat">×</span>
+        </div>
+
+        <!-- MAIN OPTIONS -->
+        <div class="chatbox-options" id="chatOptions">
+            <button class="chat-option-btn" onclick="openSiteVisitForm()">📅 Book a Site Visit</button>
+            <button class="chat-option-btn" onclick="openEnquiryForm()">📨 Enquiry Now</button>
+
+            <h5 class="faq-title">Quick Questions</h5>
+
+            <button class="faq-btn" onclick="showAnswer('q1')">What is the project location?</button>
+            <div class="faq-answer" id="q1">Gowrelly Village, Near ORR Exit 10, Hyderabad.</div>
+
+            <button class="faq-btn" onclick="showAnswer('q3')">Do you provide site visits?</button>
+            <div class="faq-answer" id="q3">Yes, we provide guided site visits daily from 9 AM to 6 PM.</div>
+        
+            <button class="faq-btn" onclick="showAnswer('q4')">What amenities are included?</button>
+            <div class="faq-answer" id="q4">Clubhouse, gym, jogging track, landscaped gardens, security, and more.</div>
+         
+
+            <button class="faq-btn" onclick="showAnswer('q2')">What is the price range?</button>
+            <div class="faq-answer" id="q2">Villas start from 1.25 Cr depending on plot size.</div>
+
+
+            <button class="faq-btn" onclick="showAnswer('q5')">How can I book a villa?</button>
+            <div class="faq-answer" id="q5">You can book a villa by contacting us via the enquiry form or calling our sales team.</div>
+        
+        </div>
+
+        <!-- SITE VISIT FORM -->
+        <div class="chat-form" id="siteVisitForm">
+            <span class="form-close" onclick="backToOptions()">← Back</span>
+            <h4>Book a Site Visit</h4>
+            <input type="text" id="svName" placeholder="Your Name *" required>
+            <input type="tel" id="svPhone" placeholder="Phone Number *" required>
+            <input type="email" id="svEmail" placeholder="Email">
+            <input type="date" id="svDate">
+            <textarea id="svMsg" placeholder="Message"></textarea>
+            <button onclick="submitSiteVisit()">Submit</button>
+            <p class="success-msg" id="svSuccess"></p>
+        </div>
+
+        <!-- ENQUIRY FORM -->
+        <div class="chat-form" id="enquiryForm">
+            <span class="form-close" onclick="backToOptions()">← Back</span>
+            <h4>Enquiry Form</h4>
+            <input type="text" id="enqName" placeholder="Your Name *" required>
+            <input type="tel" id="enqPhone" placeholder="Phone Number *" required>
+            <input type="email" id="enqEmail" placeholder="Email">
+            <textarea id="enqMsg" placeholder="Message"></textarea>
+            <button onclick="submitEnquiry()">Submit</button>
+            <p class="success-msg" id="enqSuccess"></p>
+        </div>
+
+    </div>
+</div>
+
 
 
 <!--js files-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-<script>AOS.init({ duration: 900, once: true });</script>
+<script>
+AOS.init({ duration: 900, once: true });
+</script>
 <script src="assets/js/header-scroll.js"></script>
+<script src="assets/js/mobiletoggle.js"></script>
 <script src="assets/js/projecthero.js"></script>
 <script src="assets/js/floorplan.js"></script>
 <script src="assets/js/imagepopup.js"></script>
+<script src="assets/js/chatbot.js"></script>
+<script src="assets/js/sitevisitform.js"></script>
+<script src="assets/js/enquiryform.js"></script>
 </body>
 </html>

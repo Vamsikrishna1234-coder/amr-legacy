@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   height: 80vh;                     /* adjust height if needed */
-  background-image: url('assets/images/blog-hero.jpg'); /* your image here */
+  background-image: url('/assets/images/amr\ hero2.jpg'); /* your image here */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -18,21 +18,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.45);
-  backdrop-filter: blur(2px);
+  background: rgba(0, 0, 0, 0.201);
+  
 }
 
 /* Content */
 .blogs-hero-content {
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #203370;
   z-index: 10;
 }
 
 .blogs-hero-content h1 {
-  font-size: 48px;
-  font-weight: 800;
+  font-size: 41px;
+  font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -41,7 +41,8 @@
 .blogs-hero-content p {
   font-size: 20px;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 1.5;
+  color: #ffffff;
 }
 
 
@@ -126,7 +127,7 @@
 .blog-banner {
   position: relative;
   height: 75vh;
-  background: url('assets/images/blog-hero.jpg') center/cover no-repeat;
+  background: url('/assets/images/amr\ project2.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -135,7 +136,7 @@
 .blog-banner-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(20, 20, 20, 0.438);
 }
 
 .blog-banner-content {

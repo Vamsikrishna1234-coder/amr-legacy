@@ -1,3 +1,4 @@
+
 .project-hero-carousel {
   position: relative;
   width: 100%;
@@ -118,7 +119,7 @@
 .typing-text {
   font-size: 48px;
   font-weight: 700;
-  color: #d1a32c;
+  color: #ffc227;
   text-shadow: 0 4px 10px rgba(0,0,0,0.4);
   white-space: nowrap;
   overflow: hidden;
@@ -374,7 +375,7 @@
 
 /* Parallax section */
 .parallax {
-  background-image: url("/assets/images/home2.png");
+  background-image: url("/assets/images/amr\ hero1.jpg");
   height: 100vh;
   background-attachment: fixed;
   background-position: center;
@@ -1041,9 +1042,16 @@ svg {
 
 .location-map-container img {
   width: 100%;
-  height: 1100px;      /* Adjust map height */
+  height: auto;
+  max-height: 1100px;
   object-fit: cover;
-  border-radius: 10px;  /* remove if you need sharp corners */
+  border-radius: 10px;
+  cursor: zoom-in;
+  transition: 0.3s ease;
+}
+
+.location-map-container img:hover {
+  transform: scale(1.02);
 }
 
 /* Address Section */
@@ -1058,8 +1066,57 @@ svg {
   margin-bottom: 8px;
 }
 
-.location-address p {
+.location-address h5 {
   font-size: 20px;
-  line-height: 4.5;
+  line-height: 1.7;
   color: #444;
+}
+
+/* Fixed Brochure Button */
+.brochure-btn-fixed {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    transform-origin: right center;
+
+    background: #d1a32c;
+    color: #fff !important;
+    padding: 20px 12px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none !important;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    border-radius: 8px 0 0 8px;
+    box-shadow: -4px 4px 15px rgba(0,0,0,0.25);
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Icon inside (optional – you can add font-awesome or svg) */
+.brochure-btn-fixed::before {
+    content: "↓";
+    font-size: 20px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Hover Effect – Slide out + Color Change */
+.brochure-btn-fixed:hover {
+    right: 8px;
+    background: #203370;
+    padding-right: 16px;
+    box-shadow: -8px 6px 20px rgba(0,0,0,0.3);
 }
