@@ -51,15 +51,16 @@
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 20px;
-    color: #1a1a1a;
+    color: #203370;
 }
 
 .story-container p {
     font-size: 18px;
-    line-height: 1.9;
+    line-height: 1.7;
     color: #333;
     text-align: justify;
     margin-bottom: 22px;
+    font-family: raleway;
 }
 
 /* our mission */
@@ -218,7 +219,7 @@
         }
 
         .content-box h2 {
-            font-size: 52px;
+            font-size: 32px;
             font-weight: 800;
             color: #ffffff;
             margin-bottom: 30px;
@@ -249,6 +250,7 @@
             line-height: 1.9;
             color: rgba(255, 255, 255, 0.9);
             text-align: justify;
+            font-family: raleway;
         }
 
 /* corevalues */
@@ -305,7 +307,7 @@
         }
 
         .section-header h2 {
-            font-size: 56px;
+            font-size: 32px;
             font-weight: 800;
             color: #203370;
             margin-bottom: 20px;
@@ -330,6 +332,7 @@
             max-width: 700px;
             margin: 30px auto 0;
             line-height: 1.8;
+            font-family: raleway;
         }
 
         /* Values Grid */
@@ -461,6 +464,7 @@
             line-height: 1.8;
             color: #666;
             text-align: justify;
+            font-family: raleway;
         }
 
         /* Number Badge */
@@ -501,7 +505,7 @@
 }
 
 .visionaries-title {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 800;
     color: #d1a32c;
     text-align: left;
@@ -522,7 +526,7 @@
 }
 
 .vs-title h2 {
-    font-size: 42px;
+    font-size: 33px;
     font-weight: 800;
     color: #d1a32c;
 }
@@ -531,6 +535,7 @@
     font-size: 18px;
     color: #ddd;
     margin-top: 10px;
+    
 }
 
 /* Wrapper */
@@ -573,10 +578,11 @@
 }
 
 .vs-box p {
-    font-size: 17px;
+    font-size: 18px;
     color: #e7e7e7;
     line-height: 1.8;
     text-align: justify;
+    font-family: raleway;
 }
 
 /* milestones */

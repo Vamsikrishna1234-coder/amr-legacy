@@ -368,6 +368,7 @@ html, body {
     color: #333;
     line-height: 1.6;
     max-width: 800px;
+    font-family: 'Raleway';
 }
 
 /* promises*/
@@ -473,7 +474,8 @@ html, body {
 
 .legacy-content p {
     font-size: 18px;
-    line-height: 1.9;
+    line-height: 1.6;
+    font-family: 'Raleway';
     color: #444;
     margin-bottom: 20px;
     text-align: justify;
@@ -502,11 +504,13 @@ html, body {
 
 
 /* project highlights-section*/
+/* SECTION */
 .highlights-modern {
     padding: 80px 40px;
     background: #d1a32c;
 }
 
+/* Title */
 .highlights-modern-title {
     text-align: center;
     font-size: 38px;
@@ -519,12 +523,13 @@ html, body {
     content: "";
     width: 90px;
     height: 4px;
-    background: #d1a32c;
+    background: #203370;
     display: block;
     margin: 12px auto 0;
     border-radius: 4px;
 }
 
+/* GRID */
 .highlights-modern-grid {
     max-width: 1250px;
     margin: auto;
@@ -533,17 +538,23 @@ html, body {
     gap: 35px;
 }
 
-/* Card */
+/* CARD — Updated with strong edge shadow */
 .highlight-card {
     text-align: center;
     background: #f7f7f7;
     padding: 35px 20px;
     border-radius: 14px;
+
+    /* 🔥 Strong visible border + shadow effect */
+    box-shadow:
+        0 0 10px rgba(0, 0, 0, 0.358),           /* Soft outer shadow */
+        0 0 0 4px rgba(255,255,255,0.40),    /* White outer border edge */
+        inset 0 0 12px rgba(0, 0, 0, 0.573);     /* Inner shadow depth */
+
     transition: 0.3s ease;
-    border: 1px solid #e6e6e6;
 }
 
-/* Icon */
+/* ICON */
 .highlight-card i {
     font-size: 40px;
     color: #203370;
@@ -551,7 +562,7 @@ html, body {
     transition: 0.3s;
 }
 
-/* Text */
+/* TEXT */
 .highlight-card h3 {
     font-size: 18px;
     font-weight: 700;
@@ -559,17 +570,22 @@ html, body {
     line-height: 1.4;
 }
 
-/* Hover */
+/* HOVER EFFECT — stronger glow */
 .highlight-card:hover {
     background: #203370;
     transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+    box-shadow:
+        0 0 16px rgba(0,0,0,0.22),             /* stronger depth */
+        0 0 0 4px rgba(255,255,255,0.55),      /* brighter glowing border */
+        inset 0 0 16px rgba(0,0,0,0.18);       /* deeper inner shadow */
 }
 
 .highlight-card:hover i,
 .highlight-card:hover h3 {
     color: #fff;
 }
+
 
 
 /*ongoing */
@@ -924,9 +940,10 @@ html, body {
 }
 
 .blog-content h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 8px;
+    font-family: 'Raleway';
 }
 
 .author {
@@ -937,119 +954,139 @@ html, body {
 
 
 /* footer section */
+/* MAIN FOOTER */
 .amr-footer {
-    background: #203370;
-    color: #fff;
-    padding: 80px 60px 40px;
-    font-family: "Poppins", sans-serif;
+    background-color: #203370;
+  
+    padding: 60px 0 20px;
 }
 
-/* TOP SECTION (4 Columns) */
-.footer-top {
+/* GRID LAYOUT SIMILAR TO BRICK2TECH */
+.amr-footer-container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
     display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr 1fr;
-    gap: 50px;
-    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px 60px;
+}
+
+/* COLUMNS */
+.amr-footer-col {
+    min-height: 180px;
 }
 
 /* LOGO */
-.footer-logo img {
+.amr-footer-logo {
     width: 180px;
-}
-.logo-para {
-    text-align: justify;
-    
+    margin-bottom: 18px;
+    height: 80px;
 }
 
-/* HEADINGS */
-.footer-address h3,
-.footer-links h3,
-.footer-social h3 {
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 16px;
+/* ABOUT TEXT */
+.amr-footer-about {
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 20px;
 }
 
-/* ADDRESS */
-.footer-address p {
-    line-height: 1.8;
-    font-size: 16px;
-    opacity: 0.9;
+/* SOCIAL ICONS */
+.amr-footer-social a {
+    display: inline-block;
+    background: #ffffff;
+    color: #d1a32c;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 8px;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-/* QUICK LINKS */
-.footer-links ul {
+.amr-footer-social a:hover {
+    background: #fff;
+    color: #000;
+}
+
+
+/* SECTION TITLES */
+.amr-footer-title {
+    color: #d1a32c;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 18px;
+}
+
+/* LINK LISTS */
+.amr-footer-links {
     list-style: none;
     padding: 0;
 }
 
-.footer-links ul li {
+.amr-footer-links li {
     margin-bottom: 10px;
 }
 
-.footer-links ul li a {
-    color: #fff;
+.amr-footer-links a {
+    color: #ffffff;
     text-decoration: none;
-    opacity: 0.85;
-    font-size: 16px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
-.footer-links ul li a:hover {
-    opacity: 1;
+.amr-footer-links a:hover {
     color: #d1a32c;
 }
 
-/* SOCIAL ICONS */
-.social-icons a {
-    display: inline-block;
+/* CONTACT */
+.amr-footer-contact {
+    font-size: 15px;
     color: #ffffff;
-    font-size: 20px;
-    margin-right: 14px;
-    border: 1px solid #fff;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s ease;
+    margin-bottom: 12px;
+}
+
+.amr-footer-contact a {
+    color: #ffffff;
     text-decoration: none;
 }
 
-.social-icons a:hover {
-    background: #d1a32c;
-    border-color: #040404;
+.amr-footer-contact a:hover {
+    color: #fff;
 }
 
-/* BOTTOM BAR */
-.footer-bottom {
-    border-top: 1px solid #d1a32c;
-    padding-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
+/* BOTTOM FOOTER */
+/* FOOTER BOTTOM */
+.amr-footer-bottom {
+    border-top: 1px solid #222;
+    margin-top: 40px;
+    padding-top: 15px;
+    text-align: center;
 }
 
-.tact-credit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 6px;
+.amr-footer-bottom-line {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.tact-link {
-  text-decoration: none;
-  color: inherit;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: 0.3s ease;
+/* Icons & Text */
+.tact-favicon {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
 }
-.tact-icon {
-  width: 15px;
-  height: 20px;
-  object-fit: contain;
+
+.tact-text {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 
@@ -1216,3 +1253,12 @@ html, body {
 .social-fixed-bar a:hover {
   background: #203370;
 }
+
+
+
+
+
+
+
+
+

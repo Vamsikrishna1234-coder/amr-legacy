@@ -531,9 +531,10 @@
   max-width: 900px;
   margin: 0 auto 40px;
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.7;
   color: #444;
+  font-family: 'Raleway';
 }
 
 /* Image Card */
@@ -867,17 +868,21 @@ svg {
 /* text */
 .club-feature-text {
   text-align: left;
+  font-family: 'Raleway';
 }
 
 .club-feature-text h3 {
   font-size: 1.3rem;
   margin-bottom: 8px;
   color: #d1a32c;
+  font-family: 'Raleway';
+  
 }
 
 .club-feature-text p {
   font-size: 1rem;
   line-height: 1.5;
+  font-family: 'Raleway';
 }
 
 /* Reverse row for alternate cards — NO image shrinking */
