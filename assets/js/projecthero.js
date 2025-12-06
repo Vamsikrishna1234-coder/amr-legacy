@@ -3,6 +3,7 @@ const slides = document.querySelectorAll(".carousel-slide");
 const dots = document.querySelectorAll(".dot");
 const total = slides.length;
 
+// Show specific slide
 function showSlide(index) {
   slides.forEach((slide, i) => {
     slide.classList.toggle("active", i === index);
@@ -12,6 +13,7 @@ function showSlide(index) {
   });
 }
 
+// Next & Previous
 function nextSlide() {
   current = (current + 1) % total;
   showSlide(current);
@@ -22,31 +24,38 @@ function prevSlide() {
   showSlide(current);
 }
 
-/* Auto change every 3 seconds */
-let auto = setInterval(nextSlide, 7000);
+// Auto-slide every 10 seconds
+let autoSlide = setInterval(nextSlide, 10000);  // 10 seconds
 
-/* Buttons */
-document.getElementById("nextBtn").onclick = () => {
+// Reset timer when user interacts
+function resetTimer() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(nextSlide, 10000);  // Restart 10-second timer
+}
+
+// Button controls
+document.getElementById("nextBtn")?.addEventListener("click", () => {
   nextSlide();
-  resetAuto();
-};
-
-document.getElementById("prevBtn").onclick = () => {
-  prevSlide();
-  resetAuto();
-};
-
-/* Dots click */
-dots.forEach((dot, index) => {
-  dot.onclick = () => {
-    current = index;
-    showSlide(current);
-    resetAuto();
-  };
+  resetTimer();
 });
 
-/* Reset timer on interaction */
-function resetAuto() {
-  clearInterval(auto);
-  auto = setInterval(nextSlide, 3000);
+document.getElementById("prevBtn")?.addEventListener("click", () => {
+  prevSlide();
+  resetTimer();
+});
+
+// Dot navigation
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    current = index;
+    showSlide(current);
+    resetTimer();
+  });
+});
+
+// Optional: Pause on hover (nice UX)
+const carousel = document.querySelector(".carousel");
+if (carousel) {
+  carousel.addEventListener("mouseenter", () => clearInterval(autoSlide));
+  carousel.addEventListener("mouseleave", () => autoSlide = setInterval(nextSlide, 10000));
 }
