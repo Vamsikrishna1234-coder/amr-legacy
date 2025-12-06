@@ -39,3 +39,15 @@ fpModal.onclick = function (e) {
     document.body.style.overflow = "auto";
   }
 };
+
+
+//gallery //
+function nextGallery() {
+  let carousel = bootstrap.Carousel.getInstance(document.getElementById('galleryCarousel'));
+  carousel.next();
+}
+
+function prevGallery() {
+  let carousel = bootstrap.Carousel.getInstance(document.getElementById('galleryCarousel'));
+  carousel.prev();
+}

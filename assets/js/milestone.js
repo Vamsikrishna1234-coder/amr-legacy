@@ -1,33 +1,42 @@
-const counters = document.querySelectorAll('.count');
-let milestoneStarted = false;
+document.addEventListener("DOMContentLoaded", () => {
 
-function startCounting() {
-  counters.forEach(counter => {
-    let target = +counter.getAttribute('data-target');
-    let start = 0;
-    let speed = target / 200; // adjust speed
+  const counters = document.querySelectorAll('.count');
 
-    const updateCounter = () => {
-      if (start < target) {
-        start += speed;
-        counter.textContent = Math.floor(start);
-        requestAnimationFrame(updateCounter);
-      } else {
-        counter.textContent = target; 
+  function animateCounters() {
+    counters.forEach(counter => {
+      let target = +counter.getAttribute("data-target");
+      let current = 0;
+      let speed = target / 120; // speed adjust — higher is slower
+
+      function update() {
+        if (current < target) {
+          current += speed;
+          counter.textContent = Math.floor(current);
+          requestAnimationFrame(update);
+        } else {
+          counter.textContent = target;
+        }
       }
-    };
-    updateCounter();
-  });
-}
 
-function checkScroll() {
-  const section = document.getElementById('milestones');
-  const sectionTop = section.getBoundingClientRect().top;
-
-  if (sectionTop < window.innerHeight - 100 && !milestoneStarted) {
-    milestoneStarted = true;
-    startCounting();
+      update();
+    });
   }
-}
 
-window.addEventListener('scroll', checkScroll);
+  function resetCounters() {
+    counters.forEach(counter => counter.textContent = "0");
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          resetCounters();
+          animateCounters();
+        }
+      });
+    },
+    { threshold: 0.1 } // important fix
+  );
+
+  observer.observe(document.getElementById("milestones"));
+});

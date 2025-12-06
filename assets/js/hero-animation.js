@@ -3,7 +3,7 @@
     const slideNumber = document.querySelector('.slide-number');
 
     let currentIndex = 0;
-    const slideInterval = 3000;
+    const slideInterval = 6000;
     let autoplayTimer;
 
     // Circular expand animation for all slides

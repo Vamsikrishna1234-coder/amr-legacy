@@ -23,15 +23,15 @@ function prevSlide() {
 }
 
 /* Auto change every 3 seconds */
-let auto = setInterval(nextSlide, 4000);
+let auto = setInterval(nextSlide, 7000);
 
 /* Buttons */
-document.querySelector(".next").onclick = () => {
+document.getElementById("nextBtn").onclick = () => {
   nextSlide();
   resetAuto();
 };
 
-document.querySelector(".prev").onclick = () => {
+document.getElementById("prevBtn").onclick = () => {
   prevSlide();
   resetAuto();
 };

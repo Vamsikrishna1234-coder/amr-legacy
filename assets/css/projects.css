@@ -58,28 +58,33 @@
   color: #333;
 }
 
-/* Arrow Buttons */
-.carousel-btn {
+/* NEW PREV + NEXT BUTTONS */
+.carousel-nav-buttons {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 26px;        /* smaller arrow */
-  color: white;
-  background: rgba(0,0,0,0.35); 
-  padding: 6px 10px;      /* smaller padding */
-  border-radius: 6px;     /* small rounded rectangle */
-  cursor: pointer;
+  bottom: 130px; 
+  right: 60px;
   z-index: 20;
-  user-select: none;
-  transition: 0.3s ease;
+  display: flex;
+  gap: 12px;
 }
 
-.carousel-btn:hover {
-  background: rgba(0,0,0,0.65);
+.carousel-nav-buttons button {
+  padding: 10px 22px;
+  background: rgba(0,0,0,0.55);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.prev { left: 20px; }
-.next { right: 20px; }
+.carousel-nav-buttons button:hover {
+  background: #d1a32c;
+  color: #fff;
+}
 
 /* Dots */
 .carousel-dots {
@@ -119,7 +124,7 @@
 .typing-text {
   font-size: 48px;
   font-weight: 700;
-  color: #ffc227;
+  color: white;
   text-shadow: 0 4px 10px rgba(0,0,0,0.4);
   white-space: nowrap;
   overflow: hidden;
@@ -474,6 +479,39 @@
   height: 100vh;          /* big height */
   object-fit: cover;
 }
+
+/* Remove default arrows completely */
+.carousel-control-prev,
+.carousel-control-next {
+  display: none !important;
+}
+
+/* Top-right button container */
+.gallery-top-buttons {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 50;
+  display: flex;
+  gap: 10px;
+}
+
+/* Custom Prev/Next buttons */
+.gallery-btn {
+  padding: 6px 16px;
+  background: #203370;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.gallery-btn:hover {
+  background: #d1a32c;
+}
+
 /* Small Round Carousel Buttons */
 .carousel-control-prev,
 .carousel-control-next {
@@ -504,8 +542,8 @@
 
 .mp-title {
   text-align: center;
-  font-size: 38px;
-  font-weight: 800;
+  font-size: 35px;
+  font-weight: 700;
   color: #203370;
   margin-bottom: 20px;
   position: relative;
@@ -540,7 +578,8 @@
 /* Image Card */
 .mp-card {
   display: block;
-  max-width: 1200px;
+  max-width: 1500px;
+  max-height: 600px;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
@@ -559,6 +598,7 @@
   display: block;
   object-fit: cover;
 }
+
 
 /* floor plans */
 .floorplans-section {
@@ -650,6 +690,29 @@
 
 .fp-btn:hover { background: #d1a32c; }
 
+/* Buttons below slider */
+.fp-controls {
+  text-align: right;
+  padding: 10px 20px 0 0;  /* right alignment */
+}
+
+.fp-bottom-btn {
+  background: #203370;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.fp-bottom-btn:hover {
+  background: #d1a32c;
+}
+
+
 /* ---------- POPUP MODAL ---------- */
 .fp-modal {
   display: none;
@@ -699,8 +762,8 @@
 }
 .clubhouse-title {
   text-align: center;
-  font-weight: 800;
-  font-size: 38px;
+  font-weight: 700;
+  font-size: 35px;
   color: #203370;
   position: relative;
   
@@ -768,7 +831,7 @@
 
 /* AMENITIES HEADING */
 .amenities-title {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
   color: #203370;
   margin: 20px 0;
@@ -799,22 +862,38 @@
 }
 
 /* AMENITY BOX */
+/* AMENITY BOX */
 .amenity-box {
   background: #fff;
-  padding: 10px 10px;
+  padding: 12px 14px;
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 14px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transform: scale(1);
   transition: 0.3s ease;
   cursor: pointer;
+  min-height: 70px;
+  border-radius: 8px;
 }
 
+/* SMALL MOVEMENT ON HOVER */
 .amenity-box:hover {
-  transform: scale(1.08);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
 }
+
+/* ICON SIZE */
+.amenity-box svg {
+  width: 60px !important;
+  height: 60px !important;
+  stroke-width: 2;
+  transition: 0.3s ease;
+}
+
+/* ICON MOVEMENT */
+.amenity-box:hover svg {
+  transform: translateY(-4px) scale(1.05);
+}
+
 
 /* ICON COLOR */
 svg {
