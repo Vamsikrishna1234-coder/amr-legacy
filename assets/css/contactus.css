@@ -2,7 +2,7 @@
 .contact-hero {
   position: relative;
   height: 70vh;
-  background: url('/assets/images/abouthero\ amr.jpg') center/cover no-repeat;
+  background: url('/assets/images/amr\ contact1.png') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +20,9 @@
   position: relative;
 }
 
-.contact-hero-content h1 {
-  font-size: 50px;
-  font-weight: 800;
+.contact-hero-content h2 {
+  font-size: 32px;
+  font-weight: 600;
   margin-bottom: 10px;
 }
 
@@ -37,11 +37,12 @@
 .contact-section {
   padding: 70px 0;
   background: #fff;
+  
 }
 
 .contact-heading {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 26px;
+  font-weight: 600;
   color: #203370;
   margin-bottom: 25px;
 }

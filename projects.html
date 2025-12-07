@@ -125,14 +125,6 @@
   </div>
 
 
-  <!-- Stats Strip -->
-  <div class="stats-strip">
-    <div class="stat"><h3>10+</h3><span>Acres</span></div>
-    <div class="stat"><h3>112+</h3><span>Villas</span></div>
-    <div class="stat"><h3>165–337</h3><span>SQ. YRDS</span></div>
-    <div class="stat"><h3>15000 SFT.</h3><span>Clubhouse</span></div>
-  </div>
-
 </section>
 
 
@@ -248,6 +240,8 @@
 
 <!--project highlights-->
 <section class="project-highlights-section">
+  
+  <div class="container">
 
     <h2 class="highlight-title">PROJECT HIGHLIGHTS</h2>
 
@@ -295,7 +289,11 @@
         </div>
 
       </div>
+
     </div>
+
+  </div>
+
 </section>
 
 <!--parallelex-->
@@ -318,51 +316,54 @@
 
 <!--Gallery-->
 <section class="carousel-section">
-  <h2 class="gallery-heading">GALLERY</h2>
+  
+  <div class="container">
 
-  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+    <h2 class="gallery-heading">GALLERY</h2>
 
-    <!-- TOP RIGHT BUTTONS -->
-    <div class="gallery-top-buttons">
-      <button class="gallery-btn" onclick="prevGallery()">Prev</button>
-      <button class="gallery-btn" onclick="nextGallery()">Next</button>
-    </div>
+    <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
 
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-        <img src="assets/images/amr hero3.jpg" class="d-block w-100">
+      <!-- TOP RIGHT BUTTONS -->
+      <div class="gallery-top-buttons">
+        <button class="gallery-btn" onclick="prevGallery()">Prev</button>
+        <button class="gallery-btn" onclick="nextGallery()">Next</button>
       </div>
 
-      <div class="carousel-item">
-        <img src="assets/images/amr hero1.jpg" class="d-block w-100">
-      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/images/amr hero3.jpg" class="d-block w-100">
+        </div>
 
-      <div class="carousel-item">
-        <img src="assets/images/ganesh idol1 amr.jpg" class="d-block w-100">
-      </div>
+        <div class="carousel-item">
+          <img src="assets/images/amr hero1.jpg" class="d-block w-100">
+        </div>
 
-      <div class="carousel-item">
-        <img src="assets/images/walkingtrack amr.jpg" class="d-block w-100">
-      </div>
+        <div class="carousel-item">
+          <img src="assets/images/ganesh idol1 amr.jpg" class="d-block w-100">
+        </div>
 
-      <div class="carousel-item">
-        <img src="assets/images/box cricket amr.jpg" class="d-block w-100">
-      </div>
+        <div class="carousel-item">
+          <img src="assets/images/walkingtrack amr.jpg" class="d-block w-100">
+        </div>
 
-      <div class="carousel-item">
-        <img src="assets/images/ganesh idol amr.jpg" class="d-block w-100">
-      </div>
-      
-      <div class="carousel-item">
-        <img src="assets/images/amr project2.jpg" class="d-block w-100">
+        <div class="carousel-item">
+          <img src="assets/images/box cricket amr.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/images/ganesh idol amr.jpg" class="d-block w-100">
+        </div>
+
+        <div class="carousel-item">
+          <img src="assets/images/amr project2.jpg" class="d-block w-100">
+        </div>
       </div>
 
     </div>
 
   </div>
-</section>
 
+</section>
 
 
 <!--masterplan layout-->
@@ -392,41 +393,48 @@
 <!--floor plans-->
 <section class="floorplans-section">
 
-  <h1 class="fp-main-heading">FLOOR PLANS</h1>
+  <div class="container">
 
-  <!-- EAST FACING -->
-  <h2 class="fp-sub-heading">East Facing</h2>
-  <div class="fp-container">
-    <div id="east-slider" class="fp-slider">
-      <img src="assets/images/eastfacing fp.jpg" class="fp-img">
-      <img src="assets/images/eastfacing fp1.jpg" class="fp-img">
-      <img src="assets/images/eastfacing fp.jpg" class="fp-img">
-      <img src="assets/images/eastfacing fp1.jpg" class="fp-img">
+    <h1 class="fp-main-heading">FLOOR PLANS</h1>
+
+    <!-- EAST FACING -->
+    <h2 class="fp-sub-heading">East Facing</h2>
+
+    <div class="fp-container">
+      <div id="east-slider" class="fp-slider">
+        <img src="assets/images/eastfacing fp.jpg" class="fp-img">
+        <img src="assets/images/eastfacing fp1.jpg" class="fp-img">
+        <img src="assets/images/eastfacing fp.jpg" class="fp-img">
+        <img src="assets/images/eastfacing fp1.jpg" class="fp-img">
+      </div>
+
+      <div class="fp-controls">
+        <button onclick="prevSlide('east')" class="fp-bottom-btn">Prev</button>
+        <button onclick="nextSlide('east')" class="fp-bottom-btn">Next</button>
+      </div>
     </div>
 
-    <div class="fp-controls">
-      <button onclick="prevSlide('east')" class="fp-bottom-btn">Prev</button>
-      <button onclick="nextSlide('east')" class="fp-bottom-btn">Next</button>
-    </div>
-  </div>
+    <!-- WEST FACING -->
+    <h2 class="fp-sub-heading">West Facing</h2>
 
-  <!-- WEST FACING -->
-  <h2 class="fp-sub-heading">West Facing</h2>
-  <div class="fp-container">
-    <div id="west-slider" class="fp-slider">
-      <img src="assets/images/westfacing fp.jpg" class="fp-img">
-      <img src="assets/images/westfacing fp1.jpg" class="fp-img">
-      <img src="assets/images/westfacing fp.jpg" class="fp-img">
-      <img src="assets/images/westfacing fp1.jpg" class="fp-img">
+    <div class="fp-container">
+      <div id="west-slider" class="fp-slider">
+        <img src="assets/images/westfacing fp.jpg" class="fp-img">
+        <img src="assets/images/westfacing fp1.jpg" class="fp-img">
+        <img src="assets/images/westfacing fp.jpg" class="fp-img">
+        <img src="assets/images/westfacing fp1.jpg" class="fp-img">
+      </div>
+
+      <div class="fp-controls">
+        <button onclick="prevSlide('west')" class="fp-bottom-btn">Prev</button>
+        <button onclick="nextSlide('west')" class="fp-bottom-btn">Next</button>
+      </div>
     </div>
 
-    <div class="fp-controls">
-      <button onclick="prevSlide('west')" class="fp-bottom-btn">Prev</button>
-      <button onclick="nextSlide('west')" class="fp-bottom-btn">Next</button>
-    </div>
   </div>
 
 </section>
+
 
 <!-- POPUP MODAL (outside section, near bottom of body) -->
 <div id="fpModal" class="fp-modal">
@@ -438,204 +446,147 @@
 
 <!--clubhouse-->
 <section class="clubhouse-full-section">
+  <div class="container">
 
-  <!-- INVISIBLE ANCHOR TO PREVENT PAGE JUMP ON CLOSE -->
-  <div id="close"></div>
-   
-  <h2 class="clubhouse-title">Clubhouse</h2>
-  <!-- FULL WIDTH IMAGE (CLICK TO OPEN POPUP) -->
-  <a href="#clubhouse-popup">
+    <h2 class="clubhouse-title">Clubhouse</h2>
+
     <div class="clubhouse-image-wrapper">
-      <img src="assets/images/amr clubhouse1.jpg" alt="clubhouse">
+      <img src="assets/images/amr clubhouse1.jpg" id="openClubhouseImage">
     </div>
-  </a>
 
-  <!-- POPUP IMAGE VIEWER -->
-  <div id="clubhouse-popup" class="popup">
-    <a href="#close" class="close-btn">&times;</a>
-    <img src="assets/images/amr clubhouse1.jpg" class="popup-img">
-  </div>
+    <!-- POPUP -->
+    <div class="image-popup" id="clubhousePopup">
+      <span class="close-btn" id="closePopup">&times;</span>
+      <img src="assets/images/amr clubhouse1.jpg">
+    </div>
 
-  <!-- AMENITIES HEADER -->
+    <h2 class="amenities-title">Clubhouse Amenities</h2>
 
-  <h2 class="amenities-title">Clubhouse Amenities</h2>
-
-  <!-- AMENITIES GRID -->
-  <div class="amenities-grid">
+    <div class="amenities-grid">
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-      <circle cx="8" cy="8" r="3" />
-      <circle cx="16" cy="16" r="3" />
-      <path d="M13 11l-2 2" />
-    </svg>
-
+    <img src="assets/images/Club-01.png" class="amenity-icon">
     <p>Indoor Games</p>
   </div>
 
   <div class="amenity-box">
-        <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-      <circle cx="12" cy="4" r="2.5" />
-      <path d="M5 20c2-6 12-6 14 0" />
-      <path d="M12 6v6" />
-    </svg>
-
+    <img src="assets/images/Club-02.png" class="amenity-icon">
     <p>Yoga</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="2">
-      <rect x="1" y="10" width="4" height="4" />
-      <rect x="19" y="10" width="4" height="4" />
-      <rect x="5" y="11" width="14" height="2" />
-    </svg>
-
+    <img src="assets/images/Club-03.png" class="amenity-icon">
     <p>Gym</p>
   </div>
 
   <div class="amenity-box">
-      <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-      <path d="M3 21V7l9-4 9 4v14" />
-      <path d="M9 21v-6h6v6" />
-    </svg>
-
+    <img src="assets/images/Club-04.png" class="amenity-icon">
     <p>Banquet Hall</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <path d="M14 3v8M10 3v8M4 13l3 7h10l3-7" />
-  </svg>
-
+    <img src="assets/images/Club-05.png" class="amenity-icon">
     <p>Salon</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-      <circle cx="12" cy="6" r="3" />
-      <path d="M4 21c1-6 4-10 8-10s7 4 8 10" />
-    </svg>
-
+    <img src="assets/images/Club-06.png" class="amenity-icon">
     <p>Creche</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <path d="M4 19h16" />
-    <path d="M12 3l8 5-8 5-8-5 8-5z" />
-  </svg>
-
+    <img src="assets/images/Club-07.png" class="amenity-icon">
     <p>Study Room</p>
   </div>
 
   <div class="amenity-box">
-   <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <path d="M3 21V9l9-6 9 6v12H3z" />
-    <path d="M9 21v-6h6v6" />
-  </svg>
-
+    <img src="assets/images/Club-08.png" class="amenity-icon">
     <p>Guest Rooms</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <circle cx="12" cy="4" r="2" />
-    <path d="M12 6v4l-4 4" />
-    <path d="M12 10l4 4" />
-    <path d="M6 20h12" />
-  </svg>
-
+    <img src="assets/images/Club-09.png" class="amenity-icon">
     <p>Yoga Meditation Hall</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <rect x="3" y="8" width="18" height="10" rx="2" />
-    <circle cx="8" cy="13" r="1" />
-    <circle cx="16" cy="13" r="1" />
-  </svg>
-
+    <img src="assets/images/icons/play-sta" class="amenity-icon">
     <p>Play Station Room</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <rect x="3" y="6" width="18" height="14" rx="2" />
-    <path d="M12 10v6M9 13h6" />
-  </svg>
-
+    <img src="assets/images/icons/first-aid.png" class="amenity-icon">
     <p>First Aid Room</p>
   </div>
 
   <div class="amenity-box">
-    <svg width="65" height="65" viewBox="0 0 24 24" fill="none" stroke="#203370" stroke-width="1.8">
-    <rect x="2" y="8" width="20" height="12" rx="2" />
-    <circle cx="9" cy="14" r="1" />
-    <circle cx="15" cy="14" r="1" />
-  </svg>
-
+    <img src="assets/images/icons/home-theater.png" class="amenity-icon">
     <p>Home Theater</p>
   </div>
 
-
 </div>
 
+  </div>
+  </div>
 </section>
 
-<!-- Your original structure adapted -->
+
 <section class="club-feature-section">
+  <div class="container">
 
-  <!-- GYM -->
-  <div class="club-feature-row">
-    <div class="club-feature-img">
-      <img src="assets/images/gym amr.jpg" alt="State-of-the-Art Gym" data-full="assets/images/infosys.jpg">
+    <div class="club-feature-grid">
+
+      <!-- Card 1 -->
+      <div class="club-feature-row">
+        <div class="club-feature-img">
+          <img src="assets/images/gym amr.jpg" alt="Gym" data-full="assets/images/gym amr.jpg">
+        </div>
+        <div class="club-feature-text">
+          <h3>State-of-the-Art Gym</h3>
+          <p>
+           A fully equipped air-conditioned gym designed for modern fitness routines, ensuring a healthy lifestyle for every resident.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="club-feature-row">
+        <div class="club-feature-img">
+          <img src="assets/images/indoorgames amr.jpg" alt="Indoor Games" data-full="assets/images/indoorgames amr.jpg">
+        </div>
+        <div class="club-feature-text">
+          <h3>Indoor Games Arena</h3>
+          <p>
+            Enjoy multiple indoor recreational games with family and friends inside a vibrant and engaging indoor environment.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="club-feature-row">
+        <div class="club-feature-img">
+          <img src="assets/images/amr yoga.jpg" alt="Yoga Hall" data-full="assets/images/amr yoga.jpg">
+        </div>
+        <div class="club-feature-text">
+          <h3>Yoga & Meditation Hall</h3>
+          <p>
+            A calm and peaceful hall designed exclusively for meditation and yoga practices to relax your mind and body.
+          </p>
+        </div>
+      </div>
+
     </div>
-    <div class="club-feature-text">
-      <h3>State-of-the-Art Gym</h3>
-      <p>
-        A fully equipped air-conditioned gym designed for modern fitness 
-        routines, ensuring a healthy lifestyle for every resident.
-      </p>
-    </div>
+
   </div>
-
-  <!-- INDOOR GAMES -->
-  <div class="club-feature-row reverse">
-    <div class="club-feature-img">
-      <img src="assets/images/indoorgames amr.jpg" alt="Indoor Games Arena" data-full="assets/images/indu school.jpg">
-    </div>
-    <div class="club-feature-text">
-      <h3>Indoor Games Arena</h3>
-      <p>
-        Enjoy multiple indoor recreational games with family and friends 
-        inside a vibrant and engaging indoor environment.
-      </p>
-    </div>
-  </div>
-
-  <!-- YOGA HALL -->
-  <div class="club-feature-row">
-    <div class="club-feature-img">
-      <img src="assets/images/amr yoga.jpg" alt="Yoga & Meditation Hall" data-full="assets/images/hyderabad metro.jpg">
-    </div>
-    <div class="club-feature-text">
-      <h3>Yoga & Meditation Hall</h3>
-      <p>
-        A calm and peaceful hall designed exclusively for meditation and yoga 
-        practices to relax your mind and body.
-      </p>
-    </div>
-  </div>
-
 </section>
 
-<!-- Modal markup (kept outside content section) -->
-<div class="image-modal" id="imageModal" aria-hidden="true" role="dialog" aria-label="Image preview">
-  <div class="modal-content" role="document">
-    <button class="close-btn" id="modalCloseBtn" aria-label="Close image">&times;</button>
-    <img id="modalImage" src="" alt="Full preview">
-  </div>
+
+<!-- FEATURE IMAGE MODAL -->
+<div class="image-modal" id="imageModal">
+  <img id="modalImage" src="">
+  <span class="close-btn" id="modalClose">&times;</span>
 </div>
+
    
 
 <!--specifications-->
@@ -775,19 +726,30 @@
 
   <h2 class="location-heading">Location Map</h2>
 
-  <div class="location-map-container">
-    <a href="assets/images/AMR_Location.jpg" target="_blank">
-      <img src="assets/images/AMR_Location.jpg" alt="Location Map">
-    </a>
-  </div>
+  <div class="location-flex">
 
-  <div class="location-address" data-aos="fade-up" data-aos-delay="200">
-    <h3>Project Address</h3>
-    <h5>
-      AMR Legacy Villas, ORR Exit-10 Gowrelly(V) <br>
-      Abdullapurmet(M), Near Nagole, Hyderabad, <br>
-      Telangana - 500033.
-    </h5>
+    <!-- LEFT: MAP IMAGE -->
+    <div class="location-map-container" data-aos="fade-right">
+      <a href="assets/images/AMR_Location.jpg" target="_blank">
+        <img src="assets/images/AMR_Location.jpg" alt="Location Map">
+      </a>
+    </div>
+
+    <!-- RIGHT: ADDRESS -->
+    <div class="location-address" data-aos="fade-left" data-aos-delay="150">
+
+      <div class="location-quote">“Where connectivity meets convenience.”</div>
+
+      <h3>Project Address</h3>
+
+      <h5>
+        AMR Legacy Villas, ORR Exit-10 Gowrelly(V) <br>
+        Abdullapurmet(M), Near Nagole, Hyderabad, <br>
+        Telangana - 500033.
+      </h5>
+
+    </div>
+
   </div>
 
 </section>

@@ -70,9 +70,9 @@
 
 .carousel-nav-buttons button {
   padding: 10px 22px;
-  background: rgba(0,0,0,0.55);
+  background: #d1a32c;
   border: none;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   border-radius: 6px;
   font-size: 14px;
@@ -82,8 +82,8 @@
 }
 
 .carousel-nav-buttons button:hover {
-  background: #d1a32c;
-  color: #fff;
+  background: #c06643;
+  color: #ffffff;
 }
 
 /* Dots */
@@ -110,38 +110,7 @@
   opacity: 1;
   background: #d1a32c;
 }
-/* Text Overlay */
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  z-index: 30;
-  width: 100%;
-}
 
-.typing-text {
-  font-size: 45px;
-  font-weight: 600;
-  color: #203370;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.4);
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid #fff;
-  width: 0;
-  animation: typing 3s steps(25) forwards, cursorBlink 0.7s infinite;
-}
-/* Typing Animation */
-@keyframes typing {
-  from { width: 0; }
-  to { width: 570px; } /* adjust based on text length */
-}
-
-/* Blinking Cursor */
-@keyframes cursorBlink {
-  50% { border-color: transparent; }
-}
 
 /* location hightlights */
 .location-alt-section {
@@ -151,7 +120,7 @@
 
 .location-alt-section h2 {
   color: #203370;
-  font-size: 36px;
+  font-size: 32px;
   text-align: center;
   margin-bottom: 40px;
 }
@@ -217,13 +186,14 @@
 }
 
 .underline-badge {
-    width: 360px;               /* length of underline */
+    width: 120px;               /* length of underline */
     height: 4px;                /* thickness */
-    background: #d1a32c;        /* theme color (dark blue) */
+    background: #ffffff;        /* theme color (dark blue) */
     margin: 10px auto 40px;     /* spacing above & below */
     border-radius: 2px;         /* smooth edges */
 }
 
+/* project */
 /* Project highlights */
 .container {
   max-width: 1200px;
@@ -233,18 +203,24 @@
 /* MAIN SECTION */
 .project-highlights-section {
   background: #ffffff;
-  padding: 30px;
+ 
+}
+.container {
+  max-width: 1380px;
+  margin: 0 auto;
+  padding: 0 10px;   /* LEFT & RIGHT padding */
 }
 
 /* CENTERED HEADING */
 .highlight-title {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 40px;
   line-height: 1;
   color: #203370;   
   position: relative;
+  margin-top: 20px;
 }
 
 /* Decorative underline under centered heading */
@@ -254,9 +230,9 @@
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
-  width: 380px;
+  width: 150px;
   height: 4px;
-  background: #d1a32c;  /* gold underline */
+  background: #c06643;  /* gold underline */
   border-radius: 2px;
 
 }
@@ -278,7 +254,7 @@
   width: 650px;
   height: 630px;
   object-fit: cover;
-  
+  margin-bottom: 20px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.4);
     
 }
@@ -297,12 +273,13 @@
 .highlights-image::after {
   content: '✦ LUXURY LIVING ✦';
   position: absolute;
-  bottom: -20px;
-  left: 50%;
+  bottom: -1px;
+  left: 45%;
   transform: translateX(-50%);
   background: #d1a32c;
   color: #f1f1f1;
   padding: 8px 28px;
+  margin-bottom: 5px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 12px;
@@ -449,7 +426,15 @@
 .horizontal-form button:hover {
   background: #203370;
 }
+
+/* --------------*/
 /* gallery */
+.container {
+  max-width: 1450px;
+  margin: 0 auto;
+  padding: 0 0px;   /* ✔ Equal left/right padding */
+}
+
 .carousel-section {
   background: #ffffff;
   padding: 40px 0;
@@ -457,7 +442,7 @@
 
 .gallery-heading {
   text-align: center;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 600;
   color: #203370;
   margin-bottom: 25px;
@@ -470,16 +455,15 @@
 /* Underline */
 .gallery-heading::after {
   content: "";
-  width: 160px;             /* underline width */
+  width: 140px;             /* underline width */
   height: 4px;             /* underline thickness */
-  background: #d1a32c;     /* golden underline */
+  background: #c06643;     /* golden underline */
   position: absolute;
   left: 50%;
   bottom: -10px;
   transform: translateX(-50%);
   border-radius: 2px;
 }
-
 
 .carousel {
   width: calc(100% - 70px);    
@@ -550,12 +534,12 @@
 /* masterplan layout */
 .masterplan-section {
   background: #ffffff;
-  padding: 60px 0;
+  padding: 10px 0;
 }
 
 .mp-title {
   text-align: center;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 600;
   color: #203370;
   margin-bottom: 20px;
@@ -568,9 +552,9 @@
 /* Underline */
 .mp-title::after {
   content: "";
-  width: 280px;            /* underline width */
+  width: 200px;            /* underline width */
   height: 4px;            /* underline thickness */
-  background: #d1a32c;    /* underline color */
+  background: #c06643;    /* underline color */
   position: absolute;
   left: 50%;
   bottom: -8px;
@@ -589,10 +573,11 @@
 }
 
 /* Image Card */
+
 .mp-card {
   display: block;
-  max-width: 1500px;
-  max-height: 600px;
+  width: 100%;
+  max-width: 1300px;      /* adjust width here */
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
@@ -601,16 +586,18 @@
   cursor: zoom-in;
 }
 
+.mp-card img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
 .mp-card:hover {
   transform: scale(1.01);
   box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 }
 
-.mp-card img {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-}
+
 
 
 /* floor plans */
@@ -626,10 +613,10 @@
 /* MAIN HEADING */
 .fp-main-heading {
   text-align: center;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 600;
   color: #203370;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -638,9 +625,9 @@
 /* Underline */
 .fp-main-heading::after {
   content: "";
-  width: 260px;
+  width: 200px;
   height: 4px;
-  background: #d1a32c;
+  background: #c06643;
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -757,312 +744,237 @@
   color: #d1a32c;
 }
 
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 0px;   /* LEFT & RIGHT padding */
+}
+
 
 /* clubhouse */
-.clubhouse-full-section {
-  width: 100%;
-  background: #fff;
-  margin: 0;
-  padding-top: 0;
+/* ======= GLOBAL CONTAINER FOR EQUAL PADDING ======= */
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 0px;
 }
+
+/* ======= CLUBHOUSE SECTION ======= */
+.clubhouse-full-section {
+    width: 100%;
+    background: #fff;
+    padding: 0;
+}
+
+/* Clubhouse Title */
 .clubhouse-title {
-  text-align: center;
-  font-weight: 600;
-  font-size: 34px;
-  color: #203370;
-  position: relative;
-  
-  margin: 0 auto 30px auto;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+    color: #203370;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .clubhouse-title::after {
-  content: "";
-  width: 200px;        /* underline width */
-  height: 4px;        /* underline thickness */
-  background: #d1a32c;  /* underline color (gold)*/
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-  border-radius: 2px;
+    content: "";
+    width: 150px;
+    height: 4px;
+    background: #c06643;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+    border-radius: 2px;
 }
 
-/* FULL WIDTH IMAGE */
-.clubhouse-image-wrapper {
-  width: 100%;
-  padding: 0 20px; /* REQUESTED LEFT + RIGHT PADDING */
-}
-
+/* Image wrapper */
 .clubhouse-image-wrapper img {
-  width: 100%;
-  height: 620px;   /* bigger height */
-  object-fit: cover;
-  display: block;
-  border-radius: 0;
-  cursor: pointer;
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 6px;
 }
 
-/* POPUP */
-.popup {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.88);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  z-index: 9999;
+/* ===== POPUP (JS Controlled, No Page Jump) ===== */
+.image-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    z-index: 9999;
 }
 
-.popup:target {
-  display: flex;
+.image-popup.open {
+    display: flex;
 }
 
-.popup-img {
-  max-width: 92%;
-  max-height: 92%;
-  object-fit: contain;
+.image-popup img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 6px;
 }
 
-/* CLOSE BUTTON */
-.close-btn {
-  position: absolute;
-  top: 25px;
-  right: 40px;
-  font-size: 50px;
-  color: white;
-  text-decoration: none;
+.image-popup .close-btn {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
 }
 
-/* AMENITIES HEADING */
-/* -------------------------------- */
-/* AMENITIES TITLE                  */
-/* -------------------------------- */
-
+/* ======= AMENITIES TITLE ======= */
 .amenities-title {
     font-size: 32px;
     font-weight: 600;
     color: #203370;
-    margin: 20px 0;
-    padding-bottom: 5px;
-    margin-left: 72px;      /* align with image padding */
+    margin: 40px 0 20px 0;
     position: relative;
 }
 
-/* Underline */
 .amenities-title::after {
     content: "";
-    width: 330px;          /* underline width */
-    height: 3px;           /* thickness */
-    background: #d1a32c;   /* underline color */
+    width: 320px;
+    height: 3px;
+    background: #c06643;
     position: absolute;
+    bottom: -6px;
     left: 0;
-    bottom: -5px;          /* adjust gap below text */
-    border-radius: 2px;
 }
 
-
-/* -------------------------------- */
-/* GRID                             */
-/* -------------------------------- */
-
+/* ======= AMENITIES GRID ======= */
 .amenities-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    padding: 0 20px;
-    margin-left: 30px;
 }
 
-
-/* -------------------------------- */
-/* AMENITY BOX                      */
-/* -------------------------------- */
-
+/* Amenity Box */
 .amenity-box {
     background: #fff;
-    padding: 12px 45px;
+    padding: 14px 20px;
     display: flex;
     align-items: center;
-    gap: 10px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-    transition: 0.3s ease;
-    cursor: pointer;
-    min-height: 70px;
-    max-width: 380px;
+    gap: 12px;
     border-radius: 8px;
-    
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-/* Hover lift effect */
 .amenity-box:hover {
     transform: translateY(-3px);
 }
 
-
-/* -------------------------------- */
-/* ICON INSIDE BOX                  */
-/* -------------------------------- */
-
-.amenity-box svg {
-    width: 60px !important;
-    height: 60px !important;
-    stroke-width: 2;
-    transition: 0.3s ease;
-}
-
-/* Icon hover effect */
-.amenity-box:hover svg {
-    transform: translateY(-4px) scale(1.05);
+/* NEW — PNG Icon Style */
+.amenity-icon {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
 }
 
 
-/* -------------------------------- */
-/* GLOBAL SVG COLOR                 */
-/* -------------------------------- */
-
-svg {
-    stroke: #203370 !important;
+/* ======= CLUB FEATURE SECTION ======= */
+/* 3 Columns Row */
+.club-feature-section {
+    padding: 20px 0;
 }
 
-/* PREVENT SCROLL RESET */
-#close {
-  position: absolute;
-  top: 0;
-}
-/* club images */
-  .club-feature-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  padding: 20px;
+.club-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 side-by-side */
+    gap: 20px;
+    padding: 0 0px; /* equal left-right padding */
 }
 
-/* Card */
+/* Each card */
 .club-feature-row {
-  background: #fff;
-  border: 1px solid #ddd;
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  cursor: pointer;
-  border-radius: 0;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-
-  /* increase card height */
-  min-height: 460px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    cursor: pointer;
 }
 
-/* larger image */
+/* Image */
 .club-feature-img img {
-  width: 100%;
-  height: 300px;        /* ↑ increased height */
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0;
-  cursor: pointer;
-  overflow: hidden;
-  transition: transform 0.4s ease;
+    width: 100%;
+    height: 240px;       /* smaller so all fit in a row */
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform .3s ease;
 }
-.club-feature-row:hover .club-feature-img img {
-  transform: scale(1.05);   /* adjust zoom level */
+
+.club-feature-row:hover img {
+    transform: scale(1.05);
 }
-/* text */
+
+/* Text */
 .club-feature-text {
-  text-align: left;
-  font-family: 'Raleway';
+    margin-top: 15px;
 }
 
 .club-feature-text h3 {
-  font-size: 1.3rem;
-  margin-bottom: 8px;
-  color: #d1a32c;
-  font-family: 'Raleway';
-  
+    font-size: 20px;
+    color: #d1a32c;
+    font-weight: 600;
 }
 
 .club-feature-text p {
-  font-size: 1rem;
-  line-height: 1.5;
-  font-family: 'Raleway';
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Raleway';
 }
 
-/* Reverse row for alternate cards — NO image shrinking */
-.club-feature-row.reverse {
-  flex-direction: column;
+/* Modal (same as before) */
+.image-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.image-modal.open { display: flex; }
+
+.image-modal img {
+    max-width: 90%;
+    max-height: 90%;
 }
 
-    /* ------ Modal (full image) ------ */
-    .image-modal {
-      position: fixed;
-      inset: 0;
-      display: none;   
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      background: rgba(0,0,0,0.75);
-      padding: 24px;
-    }
+.image-modal .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
 
-    .image-modal.open {
-      display: flex;
-    }
 
-    .image-modal .modal-content {
-      position: relative;
-      max-width: calc(100% - 80px);
-      max-height: calc(100% - 80px);
-      width: auto;
-      height: auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    /* The full image inside modal */
-    .image-modal img {
-      max-width: 100%;
-      max-height: 100%;
-      display: block;
-      border-radius: 0;
-      box-shadow: 0 14px 36px rgba(0,0,0,0.4);
-    }
-
-    /* Close button (top-right of modal content) */
-    .image-modal .close-btn {
-      position: absolute;
-      top: -12px;
-      right: -12px;
-      background: #fff;
-      color: #111;
-      width: 38px;
-      height: 38px;
-      line-height: 38px;
-      text-align: center;
-      font-size: 22px;
-      border-radius: 50%;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .image-modal .close-btn:focus {
-      outline: 2px solid #000;
-    }
 
 /* specifications */
 .spec-section {
-  padding: 50px 20px;
-  background-color: #ffff;
+  padding: 60px 90px;  /* LEFT & RIGHT PADDING ADDED */
+  background-color: #c06643;
 }
 
 /* HEADING */
 .spec-heading {
   text-align: center;
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 600;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   position: relative;
   display: inline-block;
   left: 50%;
@@ -1072,9 +984,9 @@ svg {
 
 .spec-heading::after {
   content: "";
-  width: 320px;
+  width: 150px;
   height: 4px;
-  background: #d1a32c;
+  background: #ffffff;
   display: block;
   margin: 10px auto 0 auto;
   border-radius: 2px;
@@ -1100,6 +1012,7 @@ svg {
   height: 40px;
   object-fit: contain;
   flex-shrink: 0;
+  
 }
 
 /* TEXT */
@@ -1107,6 +1020,7 @@ svg {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 6px;
+  color: #fff;
 }
 
 .spec-text p {
@@ -1117,28 +1031,30 @@ svg {
 }
 
 
+
 /* location map */
+/* Section Background */
 /* Section Background */
 .location-map-section {
   background: #ffffff;
-  padding: 60px 20px;
-  text-align: center;
+  padding: 40px 40px;   /* equal left & right padding */
 }
 
-/* Heading with Underline */
+/* Centered Heading with Underline */
 .location-heading {
   font-size: 32px;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   position: relative;
-  display: inline-block;
+  text-align: center;
+  color: #203370;
 }
 
 .location-heading::after {
   content: "";
-  width: 200px;
+  width: 150px;
   height: 4px;
-  background: #d1a32c;
+  background: #c06643;
   position: absolute;
   left: 50%;
   bottom: -10px;
@@ -1146,18 +1062,19 @@ svg {
   border-radius: 2px;
 }
 
-/* Map Image */
-.location-map-container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
+/* FLEX LAYOUT (map left, address right) */
+.location-flex {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 40px;
 }
 
+/* Map Image */
 .location-map-container img {
   width: 100%;
   height: auto;
-  max-height: 1100px;
+  max-height: 900px;
   object-fit: cover;
   border-radius: 10px;
   cursor: zoom-in;
@@ -1165,26 +1082,45 @@ svg {
 }
 
 .location-map-container img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
 
-/* Address Section */
-.location-address {
-  margin-top: 25px;
-}
-
+/* Right Side — Address */
 .location-address h3 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 600;
   color: #203370;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .location-address h5 {
   font-size: 18px;
-  line-height: 1.7;
   color: #444;
+  line-height: 1.6;
+  font-weight: 500;
 }
+
+/* Quote Heading */
+.location-quote {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+  color: #c06643;
+  margin-bottom: 18px;
+}
+
+/* Responsive */
+@media(max-width: 992px) {
+  .location-flex {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .location-address {
+    margin-top: 20px;
+  }
+}
+
 
 /* Fixed Brochure Button */
 .brochure-btn-fixed {
@@ -1197,7 +1133,7 @@ svg {
     background: #d1a32c;
     color: #fff !important;
     padding: 3px 3px;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.3px;

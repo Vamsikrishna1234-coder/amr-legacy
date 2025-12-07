@@ -14,22 +14,22 @@ const foundations = [
     { 
         title: "EXECUTION", 
         icon: `<img src="assets/images/Execution Icon.png" class="foundation-icon" alt="execution">`,
-        desc: "Where vision meets action, execution transforms ideas into results. Our team implements strategies with precision and unwavering commitment. We deliver excellence in every action we take..."
+        desc: "Where vision meets action, execution transforms ideas into results. Our team implements strategies with precision and unwavering commitment. We deliver excellence in every action we take. Driving lasting success.."
     },
     { 
         title: "SUPPORT", 
         icon: `<img src="assets/images/Support Icon.png" class="foundation-icon" alt="support">`,
-        desc: "True partnership means standing by your side throughout the journey. Our support extends beyond project completion with ongoing assistance and guidance. Your success is our success...."
+        desc: "True partnership means standing by your side throughout the journey. Our support extends beyond project completion with ongoing assistance and guidance. Your success is our success. Built on trust always.."
     },
     { 
         title: "TRUST", 
         icon: `<img src="assets/images/Trust Icon.png" class="foundation-icon" alt="trust">`,
-        desc: "Trust is earned through consistent action and transparency. We prioritize open communication and ethical practices in everything we do. We protect your interests with complete confidentiality...."
+        desc: "Trust is earned through consistent action and transparency. We prioritize open communication and ethical practices in everything we do. We protect your interests with complete confidentiality. Always with unwavering integrity.."
     },
     { 
         title: "VALUE", 
         icon: `<img src="assets/images/Value Icon.png" class="foundation-icon" alt="value">`,
-        desc: "Delivering value means exceeding expectations and creating meaningful impact. Every solution maximizes return on investment while minimizing waste. Quality is our promise of excellence...."
+        desc: "Delivering value means exceeding expectations and creating meaningful impact. Every solution maximizes return on investment while minimizing waste. Quality is our promise of excellence. Driven to outperform.."
     }
 ];
 
