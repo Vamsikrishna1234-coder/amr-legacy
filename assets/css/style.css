@@ -316,7 +316,7 @@ html, body {
 /* Background */
 .golden-tree-section {
     background: #ffffff; /* Updated background color */
-    padding: 80px 40px;
+    padding: 10px 40px;
     position: relative;
     overflow: hidden;
 }
@@ -387,8 +387,8 @@ html, body {
         }
 
         .foundation-title h2 {
-            font-size: 33px;
-            font-weight: 700;
+            font-size: 32px;
+            font-weight: 600;
             color: #203370;
             margin-bottom: 15px;
         }
@@ -527,10 +527,12 @@ html, body {
     display: grid;
     grid-template-columns: 45% 55%;   /* More space for image, less for text */
     padding: 60px 80px;               /* Equal spacing left & right */
-    align-items: center;
+   align-items: start;
     background: #ffffff;
-    column-gap: 0;                 /* Reduced gap */
+    column-gap: 0;    
+               /* Reduced gap */
 }
+/* FIX AOS CLIPPING */
 
 /* ARC IMAGE BOX */
 .legacy-arc-box {
@@ -538,7 +540,8 @@ html, body {
     width: 100%;                      /* FULL width of its column */
     max-width: 500px;                 /* allow large images */
     height: 600px;                    /* taller so arc fits well */
-    margin: 0;                        /* remove auto-center gap */
+    margin: 0;   
+                       /* remove auto-center gap */
 }
 
 /* GOLD ARC */
@@ -559,18 +562,22 @@ html, body {
     object-fit: cover;                /* NO empty space */
     border-radius: 350px 0 0 350px;
     box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    
 }
 
 /* TEXT SECTION */
 .legacy-content {
-    margin: 0;                        /* remove auto gap */
+    margin: 0;   
+                     /* remove auto gap */
 }
 
 .legacy-content h2 {
-    font-size: 34px;
+    font-size: 32px;
     color: #203370;
     margin-bottom: 20px;
     font-weight: 600;
+    
+    
 }
 
 .legacy-content p {
@@ -606,8 +613,8 @@ html, body {
 
 /* TITLE */
 .usp-title {
-    font-size: 35px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 600;
     color: #203370;
     margin-bottom: 45px;
 }
@@ -682,7 +689,7 @@ html, body {
 .flip-front h3,
 .flip-back h3 {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     margin-bottom: 12px;
 }
 
@@ -721,8 +728,8 @@ html, body {
 /* TITLE */
 .opc-title {
   text-align: center;
-  font-size: 38px;
-  font-weight: 800;
+  font-size: 34px;
+  font-weight: 600;
   color: #203370;
   margin-bottom: 40px;
 }
@@ -782,7 +789,7 @@ html, body {
 
 .pcf-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 600;
   color: #203370;
   margin-bottom: 8px;
   text-align: center;
@@ -844,7 +851,7 @@ html, body {
 
 .spec-box .value {
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
   color: #203370;
 }
 
@@ -860,7 +867,8 @@ html, body {
   font-size: 14px;
   border-radius: 6px;
   transition: 0.3s;
-  margin-top: 40px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .pcf-view-btn:hover {
@@ -883,8 +891,8 @@ html, body {
 .scroll-title {
     text-align: center;
     color: #fff;
-    font-size: 44px;
-    font-weight: 800;
+    font-size: 34px;
+    font-weight: 600;
     margin-bottom: 50px;
 }
 
@@ -974,8 +982,8 @@ html, body {
 
 /* HEADINGS */
 .blogs-title {
-    font-size: 38px;
-    font-weight: 800;
+    font-size: 34px;
+    font-weight: 600;
     margin-bottom: 10px;
     color:#203370;
 }
@@ -1174,7 +1182,6 @@ html, body {
 }
 
 /* BOTTOM FOOTER */
-/* FOOTER BOTTOM */
 .amr-footer-bottom {
     border-top: 1px solid #222;
     margin-top: 40px;
@@ -1202,7 +1209,7 @@ html, body {
 
 .tact-text {
     color: #fff;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
 }
 

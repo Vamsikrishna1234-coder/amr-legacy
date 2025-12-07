@@ -216,6 +216,14 @@
     transition: transform 0.4s ease;
 }
 
+.underline-badge {
+    width: 360px;               /* length of underline */
+    height: 4px;                /* thickness */
+    background: #d1a32c;        /* theme color (dark blue) */
+    margin: 10px auto 40px;     /* spacing above & below */
+    border-radius: 2px;         /* smooth edges */
+}
+
 /* Project highlights */
 .container {
   max-width: 1200px;
