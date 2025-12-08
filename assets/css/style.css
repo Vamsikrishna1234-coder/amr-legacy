@@ -146,7 +146,7 @@ html, body {
 /* Navigation link initial (white) */
 .nav-item-link {
   font-size: 17px;
-  font-weight: 600;
+  font-weight: 500;
   color: #ffffff !important;
   transition: all 0.35s ease-in-out;
 }
@@ -228,27 +228,37 @@ html, body {
 }
 
 /* mobile menu */
-/* MOBILE MENU WRAPPER */
 .mobile-menu {
   position: fixed;
   top: 0;
   right: -100%;
-  width: 75%;
+  width: 100%;
   height: 100vh;
   background: #d1a32c;
   box-shadow: -2px 0 12px rgba(0,0,0,0.2);
-  padding: 60px 20px;
+  padding: 10px 10px;
   transition: all 0.4s ease-in-out;
   z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+
+  /* FIXED — moves items to top, not center */
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+
+  /* spacing so items start below close button */
+  padding-top: 80px;
 }
 
-/* Show Menu */
+/* When visible */
 .mobile-menu.active {
   right: 0;
 }
 
 /* Close Button */
-.close-btn {
+.mobile-close {
   position: absolute;
   top: 18px;
   right: 50px;
@@ -259,17 +269,22 @@ html, body {
   cursor: pointer;
 }
 
-/* Mobile Menu Links */
+/* Menu List */
 .mobile-menu ul {
   list-style: none;
   padding: 0;
-  margin-top: 30px;
+  margin: 0;          /* remove extra gap */
+  width: 100%;
 }
 
+/* Menu Items */
 .mobile-menu ul li {
   margin: 18px 0;
+  width: 100%;
+  text-align: center; /* NEW – centered */
 }
 
+/* Menu Links */
 .mobile-menu ul li a {
   font-size: 20px;
   color: #203370;
@@ -277,16 +292,15 @@ html, body {
   text-decoration: none;
 }
 
-/* Enquiry Button Inside Mobile Menu */
+/* Enquiry Button Inside Menu */
 .mobile-enquiry-btn {
   display: inline-block;
   background: #203370;
   color: #fff !important;
-  padding: 10px 20px;
+  padding: 5px 6px;
   border-radius: 6px;
   margin-top: 10px;
 }
-
 
 /* whatsapp floating button */
 .whatsapp-float {
@@ -313,6 +327,10 @@ html, body {
 
 
 /*tree section */
+/* ===========================
+   GOLDEN TREE SECTION
+   =========================== */
+
 /* Background */
 .golden-tree-section {
     background: #ffffff;
@@ -322,17 +340,17 @@ html, body {
     height: 85vh;
 }
 
-/* GRID STRUCTURE — Text left, image right */
+/* GRID: Desktop Layout — Text Left, Image Right */
 .golden-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;   /* 50% text, 50% image */
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 1300px;
     margin: auto;
     gap: 30px;
 }
 
-/* LEFT SIDE : TEXT */
+/* LEFT : TEXT */
 .tree-content {
     text-align: left;
     max-width: 600px;
@@ -352,19 +370,97 @@ html, body {
     font-family: 'Raleway';
 }
 
-/* RIGHT SIDE : IMAGE */
+/* RIGHT : IMAGE */
 .tree-image-box {
     text-align: right;
-    
 }
 
 .tree-image-box img {
-    width: 120%;        /* makes image overflow bigger */
+    width: 120%;
     max-width: none;
     height: auto;
     object-fit: contain;
 }
 
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+/* -------- TABLETS (991px and below) -------- */
+@media (max-width: 991px) {
+
+    .golden-tree-section {
+        height: auto;        /* allow full content */
+        padding: 40px 20px;
+    }
+
+    .golden-grid {
+        grid-template-columns: 1fr;   /* stack vertically */
+        text-align: center;
+        gap: 25px;
+    }
+
+    .tree-content {
+        text-align: center;  /* center text for tablet */
+        max-width: 100%;
+    }
+
+    .tree-content h2 {
+        font-size: 30px;
+    }
+
+    .tree-content p {
+        font-size: 17px;
+    }
+
+    .tree-image-box {
+        text-align: center; /* center image */
+    }
+
+    .tree-image-box img {
+        width: 80%;         /* reduce image width */
+    }
+}
+
+
+/* -------- MOBILE (600px and below) -------- */
+@media (max-width: 600px) {
+
+    .golden-tree-section {
+        padding: 30px 18px;
+        height: auto;
+    }
+
+    .tree-content h2 {
+        font-size: 26px;
+    }
+
+    .tree-content p {
+        font-size: 16px;
+    }
+
+    .tree-image-box img {
+        width: 100%;        /* full width on mobile */
+    }
+}
+
+
+/* -------- SMALL DEVICES (450px and below) -------- */
+@media (max-width: 450px) {
+
+    .tree-content h2 {
+        font-size: 24px;
+    }
+
+    .tree-content p {
+        font-size: 15px;
+    }
+
+    .golden-grid {
+        gap: 20px;
+    }
+}
 
 
 /* foundation*/
@@ -440,7 +536,7 @@ html, body {
         /* ICON - LEFT SIDE */
         .foundation-icon-circle img {
           width: 70px;
-          height: 60px;
+          height: 57px;
           object-fit: contain;
           align-items: center;
           filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
@@ -613,7 +709,15 @@ html, body {
     color: #203370;
     margin-bottom: 45px;
 }
+@media (max-width: 600px){
+    .usp-title {
+    font-size: 26px;
+    font-weight: 600;
+    color: #203370;
+    margin-bottom: 45px;
+}
 
+}
 .usp-title::after {
     content: "";
     width: 90px;
@@ -868,6 +972,68 @@ html, body {
 
 .pcf-view-btn:hover {
   background: #d1a32c;
+}
+/* ===========================
+   MOBILE ONLY (max-width: 600px)
+   =========================== */
+@media (max-width: 600px) {
+
+  /* Reduce image height */
+  .pcf-image {
+    height: 250px;
+  }
+
+  /* Content */
+  .pcf-content {
+    padding: 18px;
+    text-align: center;
+  }
+
+  .pcf-title {
+    font-size: 22px;
+  }
+
+  .pcf-location {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  /* Specs section becomes vertical */
+  .pcf-specs {
+    flex-direction: column;
+    gap: 18px;
+    padding-top: 15px;
+  }
+
+  .spec-box {
+    flex: 1 1 100%;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  /* remove vertical lines */
+  .spec-box:not(:last-child)::after {
+    display: none;
+  }
+
+  .spec-box i {
+    font-size: 20px;
+  }
+
+  .spec-box .label {
+    font-size: 13px;
+  }
+
+  .spec-box .value {
+    font-size: 16px;
+  }
+
+  /* Button */
+  .pcf-view-btn {
+    font-size: 13px;
+    padding: 8px 18px;
+    margin-top: 25px;
+  }
 }
 
 

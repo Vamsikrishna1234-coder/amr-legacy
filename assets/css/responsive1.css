@@ -54,10 +54,10 @@
     height: 70vh;
   }
   .blogs-hero-content h1 {
-    font-size: 42px;
+    font-size: 33px;
   }
   .blogs-hero-content p {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .blogs-magazine-grid {
@@ -181,7 +181,8 @@
     height: 65vh;
   }
   .blog-banner-content h1 {
-    font-size: 38px;
+    font-size: 30px;
+    font-weight: 600;
   }
 
   .blog-container {
@@ -204,7 +205,7 @@
     height: 70vh;
   }
   .blog-banner-content h1 {
-    font-size: 44px;
+    font-size: 35px;
   }
 
   /* Back to 2-column layout */

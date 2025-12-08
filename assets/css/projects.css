@@ -124,6 +124,24 @@
   text-align: center;
   margin-bottom: 40px;
 }
+.location-alt-section h2 {
+  color: #203370;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Mobile Only */
+@media (max-width: 576px) {
+  .location-alt-section h2 {
+    font-size: 22px;      /* smaller text */
+    margin-bottom: 25px;  /* reduce spacing */
+    line-height: 1.3;     /* better readability */
+    padding: 0 10px;      /* prevents text touching edges */
+  }
+}
+
+
 
 /* GRID: 4 per row */
 .location-grid {
@@ -475,6 +493,19 @@
   height: 100vh;         
   object-fit: cover;
 }
+/* Mobile Only */
+@media (max-width: 576px) {
+
+  .carousel {
+    width: 100%;        /* full width on mobile */
+    margin: 0;
+  }
+
+  .carousel-item img {
+    height: 50vh;       /* reduce height for mobile */
+    object-fit: cover;
+  }
+}
 
 /* Remove default arrows completely */
 .carousel-control-prev,
@@ -573,11 +604,10 @@
 }
 
 /* Image Card */
-
 .mp-card {
   display: block;
   width: 100%;
-  max-width: 1300px;      /* adjust width here */
+  max-width: 1300px;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
@@ -591,6 +621,43 @@
   height: 650px;
   object-fit: cover;
 }
+
+/* ============================= */
+/* RESPONSIVE BREAKPOINTS */
+/* ============================= */
+
+/* Tablets (landscape & small laptops) */
+@media (max-width: 992px) {
+  .mp-card img {
+    height: 500px;
+  }
+}
+
+/* Tablets & Mobile Landscape */
+@media (max-width: 768px) {
+  .mp-card img {
+    height: 400px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 576px) {
+  .mp-card {
+    border-radius: 3px;
+  }
+
+  .mp-card img {
+    height: 280px;   /* perfect height for mobile */
+  }
+}
+
+/* EXTRA: Very small phones */
+@media (max-width: 400px) {
+  .mp-card img {
+    height: 240px;
+  }
+}
+
 
 .mp-card:hover {
   transform: scale(1.01);
@@ -678,6 +745,27 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   cursor: pointer;
 }
+/* ===========================
+   MOBILE RESPONSIVE (ONLY)
+   =========================== */
+@media (max-width: 576px) {
+
+  .fp-container {
+    padding: 0 15px;      /* reduced padding for small screens */
+    margin-bottom: 40px;
+  }
+
+  .fp-slider {
+    gap: 12px;            /* smaller gap between images */
+  }
+
+  .fp-img {
+    flex: 0 0 100%;       /* show 1 image per row on mobile */
+    height: 220px;        /* reduced height for mobile */
+    border-radius: 4px;
+  }
+}
+
 
 /* ===========================
    SLIDER BUTTONS (BOTTOM)
@@ -846,6 +934,19 @@
     bottom: -6px;
     left: 0;
 }
+/* Mobile Only */
+@media (max-width: 576px) {
+    .amenities-title {
+        font-size: 22px;     /* smaller text for mobile */
+        margin: 25px 0 15px 0;
+    }
+
+    .amenities-title::after {
+        width: 180px;        /* shorter line */
+        height: 2.5px;
+        bottom: -4px;
+    }
+}
 
 /* ======= AMENITIES GRID ======= */
 .amenities-grid {
@@ -930,6 +1031,33 @@
     font-size: 16px;
     font-weight: 500;
     font-family: 'Raleway';
+}
+/* Mobile Only */
+@media (max-width: 576px) {
+
+    .club-feature-grid {
+        grid-template-columns: 1fr;   /* 1 card per row */
+        gap: 15px;                    /* reduced gap */
+        padding: 0 10px;              /* small side padding */
+    }
+
+    .club-feature-row {
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .club-feature-img img {
+        height: 180px;                /* smaller mobile-friendly height */
+        border-radius: 5px;
+    }
+
+    .club-feature-text h3 {
+        font-size: 18px;
+    }
+
+    .club-feature-text p {
+        font-size: 14px;
+    }
 }
 
 /* Modal (same as before) */
@@ -1101,12 +1229,19 @@
 }
 
 /* Quote Heading */
-.location-quote {
-  font-size: 24px;
+.location-quote h1{
+  font-size: 33px;
   font-weight: 600;
   font-style: italic;
   color: #c06643;
   margin-bottom: 18px;
+}
+/* Mobile Only */
+@media (max-width: 576px) {
+  .location-quote h1 {
+    font-size: 22px;        /* smaller heading */
+    margin-bottom: 14px;    /* reduced spacing */
+  }
 }
 
 /* Responsive */

@@ -28,12 +28,19 @@
 }
 
 .about-banner-content h1 {
-    font-size: 36px;
+    font-size: 34px;
     font-weight: 600;
     letter-spacing: 4px;
     color: #ffffff;
 }
-
+@media (max-width: 600px) {
+    .about-banner-content h1 {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #ffffff;
+ }
+}
 
 /* our story */
 .our-story-section {

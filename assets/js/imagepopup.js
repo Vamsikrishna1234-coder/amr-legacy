@@ -1,47 +1,82 @@
-(function () {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const closeBtn = document.getElementById('modalCloseBtn');
 
-    // Open modal when any .club-feature-img img is clicked
-    document.querySelectorAll('.club-feature-img img').forEach(img => {
-      img.addEventListener('click', function (e) {
-        const fullSrc = this.dataset.full || this.src;
-        modalImg.src = fullSrc;
-        modalImg.alt = this.alt || 'Image preview';
-        modal.classList.add('open');
-        modal.setAttribute('aria-hidden', 'false');
-        // prevent page scroll while modal open
-        document.body.style.overflow = 'hidden';
-        // focus the close button for accessibility
-        closeBtn.focus();
-      });
-    });
+// ==============================
+//  FEATURE IMAGES MODAL
+// ==============================
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImage");
+const modalClose = document.getElementById("modalClose");
 
-    // Close helpers
-    function closeModal() {
-      modal.classList.remove('open');
-      modal.setAttribute('aria-hidden', 'true');
-      modalImg.src = '';
-      document.body.style.overflow = '';
-    }
+// Open on clicking any .club-feature-img image
+document.querySelectorAll(".club-feature-img img").forEach(img => {
+  img.addEventListener("click", () => {
+    modalImg.src = img.dataset.full || img.src;
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+  });
+});
 
-    // close button
-    closeBtn.addEventListener('click', closeModal);
+// Close on button
+modalClose.addEventListener("click", () => {
+  modal.classList.remove("open");
+  modalImg.src = "";
+  document.body.style.overflow = "";
+});
 
-    // click on backdrop (outside modal-content) closes
-    modal.addEventListener('click', function (ev) {
-      // if user clicked directly on the overlay (not the image or controls)
-      if (ev.target === modal) closeModal();
-    });
+// Close on clicking outside
+modal.addEventListener("click", e => {
+  if (e.target === modal) {
+    modal.classList.remove("open");
+    modalImg.src = "";
+    document.body.style.overflow = "";
+  }
+});
 
-    // Esc key closes
-    document.addEventListener('keydown', function (ev) {
-      if (ev.key === 'Escape' && modal.classList.contains('open')) {
-        closeModal();
-      }
-    });
-  })();
+// ESC key closes
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && modal.classList.contains("open")) {
+    modal.classList.remove("open");
+    modalImg.src = "";
+    document.body.style.overflow = "";
+  }
+});
 
 
+// ==============================
+//  CLUBHOUSE MAIN IMAGE MODAL
+// ==============================
+const clubhouseImage = document.getElementById("openClubhouseImage");
+const clubhousePopup = document.getElementById("clubhousePopup");
+const clubhouseClose = document.getElementById("closePopup");
+
+// Open
+if (clubhouseImage) {
+  clubhouseImage.addEventListener("click", () => {
+    clubhousePopup.classList.add("open");
+    document.body.style.overflow = "hidden";
+  });
+}
+
+// Close
+if (clubhouseClose) {
+  clubhouseClose.addEventListener("click", () => {
+    clubhousePopup.classList.remove("open");
+    document.body.style.overflow = "";
+  });
+}
+
+// Close on clicking outside
+clubhousePopup?.addEventListener("click", e => {
+  if (e.target === clubhousePopup) {
+    clubhousePopup.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+});
+
+// ESC key closes clubhouse
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape" && clubhousePopup?.classList.contains("open")) {
+    clubhousePopup.classList.remove("open");
+    document.body.style.overflow = "";
+  }
+});
 

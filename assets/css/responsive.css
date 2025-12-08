@@ -356,12 +356,12 @@
 @media (max-width: 767px) {
   /* Hero Banner */
   .about-banner { height: 70vh; }
-  .about-banner-content h1 { font-size: 2.8rem !important; letter-spacing: 2px; }
+  .about-banner-content h1 { font-size: 32px !important; letter-spacing: 2px; }
 
   /* Our Story */
   .story-container { padding: 0 20px; }
   .story-container h2 { font-size: 28px; }
-  .story-container p { font-size: 16px; text-align: left; }
+  .story-container p { font-size: 16px; text-align: left; text-align: justify;}
 
   /* Mission & Vision – Full stacked */
   .mv-unique-section { min-height: auto; padding: 0px 0; }
@@ -370,15 +370,15 @@
   .panel.left { transform: translateX(0) !important; animation: none; background: #203370; }
   .panel.right { transform: translateX(0) !important; animation: none; background: #203370; }
   .center-line, .center-icon { display: none; }
-  .content-box h2 { font-size: 38px !important; }
+  .content-box h2 { font-size: 32px !important; }
   .content-box p { font-size: 16px; }
 
   /* Core Values */
   .core-values-section { padding: 60px 0; }
   .container { padding: 0 20px; }
-  .section-header h2 { font-size: 36px !important; }
+  .section-header h2 { font-size: 32px !important; }
   .section-header p { font-size: 16px; }
-  .values-grid { grid-template-columns: 1fr; gap: 30px; }
+  .values-grid { grid-template-columns: 1fr; gap: 20px; }
   .value-card { padding: 35px 25px; }
 
   /* Visionaries */
@@ -387,7 +387,7 @@
   .visionaries-container,
   .vs-wrapper { padding: 0 20px; }
   .visionaries-title,
-  .vs-title h2 { font-size: 36px !important; text-align: center; }
+  .vs-title h2 { font-size: 31px !important; text-align: center; }
   .vs-box { padding: 30px 20px; }
 
   /* Milestones */
@@ -398,10 +398,10 @@
 /* ——————————————— TABLET 768px – 1023px ——————————————— */
 @media (min-width: 768px) and (max-width: 1023px) {
   .about-banner { height: 70vh; }
-  .about-banner-content h1 { font-size: 3.6rem; }
+  .about-banner-content h1 { font-size: 32px; }
 
   .story-container { padding: 0 40px; }
-  .story-container h2 { font-size: 34px; }
+  .story-container h2 { font-size: 32px; }
 
   /* Mission & Vision – stacked like mobile */
   .split-container { flex-direction: column; height: auto; }
@@ -409,14 +409,14 @@
   .panel.left { transform: none !important; background: #203370; }
   .panel.right { transform: none !important; background: #2a4596; }
   .center-line, .center-icon { display: none; }
-  .content-box h2 { font-size: 46px; }
+  .content-box h2 { font-size: 32px; }
 
   .core-values-section { padding: 80px 0; }
-  .section-header h2 { font-size: 46px; }
+  .section-header h2 { font-size: 32px; }
   .values-grid { grid-template-columns: 1fr 1fr; gap: 35px; }
 
   .visionaries-title,
-  .vs-title h2 { font-size: 42px; }
+  .vs-title h2 { font-size: 32px; }
 }
 
 /* ——————————————— LAPTOP 1024px – 1439px ——————————————— */
@@ -450,20 +450,14 @@
 
 /* ——————————————— MOBILE ≤767px ——————————————— */
 @media (max-width: 767px) {
-  .project-hero-carousel, .carousel-slide { height: 100vh; }
-  .stats-strip { padding: 20px 25px; flex-direction: row; gap: 5px; }
-  .stat h3 { font-size: 24px; }
-  .stat span { font-size: 13px; }
+  .project-hero-carousel, .carousel-slide { height: 100vh; width: 950px;}
   .carousel-btn { font-size: 20px; padding: 8px 12px; }
   .carousel-dots { bottom: 20px; }
-  .hero-text { left: 0%; top: 45%; width: 50%; }
-  .typing-text { font-size: 28px !important; white-space: normal; }
-
-  .location-alt-section h2 { font-size: 28px; left: 15%; transform: translateX(-50%); }
-  .location-alt-section h2::after { width: 200px; }
-  .location-grid { grid-template-columns: 1fr; gap: 40px; padding: 0 20px; }
+  
+  
+  .location-grid { grid-template-columns: 1fr; gap: 30px; padding: 0 20px; }
   .loc-item { flex-direction: column; text-align: center; }
-  .loc-item img { width: 120px; height: 120px; }
+  .loc-item img { width: 150px; height: 140px; }
 
   .highlight-title, .gallery-heading, .mp-title, .fp-main-heading, .clubhouse-title, .spec-heading, .location-heading { font-size: 28px !important; }
   .highlight-title::after, .gallery-heading::after, .mp-title::after, .fp-main-heading::after, .clubhouse-title::after, .spec-heading::after, .location-heading::after { width: 180px !important; }
@@ -478,20 +472,16 @@
   .horizontal-form { flex-direction: column; padding: 15px; }
   .horizontal-form input { min-width: 100%; }
 
-  .carousel-item img { height: 50vh; }
+  
   .fp-img { height: 300px; }
   .amenities-grid, .spec-grid, .club-feature-section { grid-template-columns: 1fr; padding: 0 20px; gap: 20px; }
-  .club-feature-row { min-height: auto; padding: 20px; }
-  .club-feature-img img { height: 250px; }
   .location-map-container img { max-height: 500px; }
 }
 
 /* ——————————————— TABLET 768px – 1023px ——————————————— */
 @media (min-width: 768px) and (max-width: 1023px) {
   .project-hero-carousel, .carousel-slide { height: 95vh; }
-  .stats-strip { padding: 20px 40px; gap: 20px; flex-wrap: wrap; justify-content: center; }
-  .hero-text { left: 50%; width: 80%; }
-  .typing-text { font-size: 36px; }
+  
 
   .location-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 60px; padding: 0 30px; }
   .loc-item img { width: 130px; height: 130px; }
@@ -555,20 +545,7 @@
   .stat-item { flex: 0 0 auto; min-width: 100px; }
 }
 
-/* 3. Location heading – perfectly centered on ALL screens up to 1443px */
-@media (max-width: 1443px) {
-  .location-alt-section h2,
-  .location-heading {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    text-align: center !important;
-  }
-  .location-alt-section h2::after,
-  .location-heading::after {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-  }
-}
+
 
 /* 4. Floor Plans – only ONE image visible on Mobile & Tablet */
 @media (max-width: 1023px) {
@@ -689,7 +666,7 @@
     display: block !important;
     background: #203370;
     color: #fff !important;
-    padding: 8px 14px;      /* ↓ reduced size */
+    padding: 6px 3px;      /* ↓ reduced size */
     border-radius: 5px;     /* ↓ slightly smaller radius */
     margin-top: 8px;
     width: auto !important;  
@@ -709,15 +686,15 @@
   .social-fixed-bar {
     top: auto;
     bottom: 200px;
-    left: 10px;
+    left: 6px;
     transform: none;
     gap: 12px;
   }
 
   .social-fixed-bar a {
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -734,9 +711,9 @@
 
     background: #d1a32c;
     color: #fff !important;
-    padding: 12px 6px;
+    padding: 6px 6px;
     font-size: 10px;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     text-decoration: none !important;
@@ -760,14 +737,54 @@
 /* Icon inside (optional – you can add font-awesome or svg) */
 .brochure-btn-fixed::before {
     content: "↓";
-    font-size: 20px;
+    font-size: 10px;
     margin-bottom: 8px;
     display: block;
 }
 
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+    .brochure-btn-fixed {
+    position: fixed;
+    top: 53%;
+    right: 0;
+    transform: translateY(-50%);
+    transform-origin: right center;
 
+    background: #d1a32c;
+    color: #fff !important;
+    padding: 6px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none !important;
+
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+    border-radius: 8px 0 0 8px;
+    box-shadow: -4px 4px 15px rgba(0,0,0,0.25);
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+/* Icon inside (optional – you can add font-awesome or svg) */
+.brochure-btn-fixed::before {
+    content: "↓";
+    font-size: 10px;
+    margin-bottom: 8px;
+    display: block;
+}
+}
 
 
 

@@ -10,4 +10,4 @@
   // CLOSE MENU
   mobileClose.addEventListener("click", () => {
     mobileMenu.style.right = "-100%";
-  });
+  }); 
