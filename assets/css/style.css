@@ -145,7 +145,7 @@ html, body {
 
 /* Navigation link initial (white) */
 .nav-item-link {
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   color: #ffffff !important;
   transition: all 0.35s ease-in-out;
