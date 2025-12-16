@@ -8,6 +8,7 @@
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
@@ -72,13 +73,40 @@
     <a href="https://www.facebook.com/amrlivingspaces" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
     <a href="https://www.instagram.com/amrlivingspaces/" target="_blank" class="ig"><i class="fab fa-instagram"></i></a>
     <a href="https://www.youtube.com/@AMRLivingSpaces" target="_blank" class="yt"><i class="fab fa-youtube"></i></a>
-    <a href="https://x.com/AmrLiving" target="_blank" class="tw"><i class="fab fa-twitter"></i></a>
+    <a href="https://x.com/AmrLiving" target="_blank" class="tw"><i class="fa-brands fa-x-twitter"></i></i></a>
 </div>
 
 
-<a href="assets/images/AMR_Brochure_v2.pdf" download class="brochure-btn-fixed">
-     Download Brochure
+<a href="javascript:void(0)" class="brochure-btn-fixed" onclick="openBrochureForm()">
+    Download Brochure
 </a>
+
+
+<div id="brochureFormPopup" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.65); z-index:100000;">
+  <div style="background:#fff; max-width:420px; margin:8% auto; padding:30px; border-radius:10px; position:relative;">
+
+    <span onclick="closeBrochureForm()" style="position:absolute; top:12px; right:15px; font-size:22px; cursor:pointer;">&times;</span>
+
+    <h3>Download Brochure</h3>
+    <p>Please fill details to continue</p>
+
+    <form id="brochureForm">
+      <!-- REQUIRED BY YOUR email.php -->
+      <input type="hidden" name="form_type" value="Brochure Download">
+
+      <input type="text" name="name" placeholder="Name" required style="width:100%;padding:10px;margin-bottom:12px;">
+      <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;padding:10px;margin-bottom:12px;">
+      <input type="email" name="email" placeholder="Email" required style="width:100%;padding:10px;margin-bottom:12px;">
+      <textarea name="message" placeholder="Message" style="width:100%;padding:10px;margin-bottom:15px;"></textarea>
+
+      <button type="submit" style="width:100%;padding:12px;background:#203370;color:#fff;border:none;cursor:pointer;">
+        Submit & Download
+      </button>
+    </form>
+
+  </div>
+</div>
+
 
 
 <!-- WHATSAPP FLOATING BUTTON -->
@@ -261,7 +289,7 @@
           <li>East & West Facing Villas</li>
           <li><strong>4L Sft.</strong> Project Area</li>
           <li><strong>25+</strong> Amenities</li>
-          <li>30ft & 40ft Roads</li>
+          <li><strong>30ft & 40ft</strong> Roads</li>
           <li>Walking Track</li>
           <li>Lord Ganesh Statue</li>
           <li>Indoor & Outdoor Games</li>
@@ -269,7 +297,7 @@
           <li>Outdoor & Indoor Gym</li>
           <li>Landscaping Gardens</li>
           <li>Pet Park</li>
-          <li>24 Hours Security</li>
+          <li><strong>24</strong> Hours Security</li>
           <li>Swimming Pool</li>
         </ul>
 
@@ -745,8 +773,8 @@
       <h3>Project Address</h3>
 
       <h5>
-        AMR Legacy Villas, ORR Exit-10 Gowrelly(V) <br>
-        Abdullapurmet(M), Near Nagole, Hyderabad, <br>
+        AMR Legacy Villas, ORR Exit-10 Gowrelly(V),<br>
+        Abdullapurmet(M), Near Nagole, Hyderabad,<br>
         Telangana - 500033.
       </h5>
 
@@ -811,13 +839,13 @@
             <h3 class="amr-footer-title">Contact Info</h3>
 
             <p class="amr-footer-contact">
-                # 69-1, 2nd Floor, Road No. 1, Near TV5,
-                Park View Enclave, Jubilee Hills,<br>
-                Hyderabad, Telangana – 500 033.
+              #69-1, 2nd Floor, Road No.1,<br>
+              Near TV5, Park View Enclave,<br>
+              Jubilee Hills, Hyderabad, <span class="no-break">Telangana – 500 033.</span>
             </p>
 
             <p class="amr-footer-contact">
-                <strong>Phone:</strong> +91 90522 99299
+                <strong>Phone:</strong> +91 9052 299 299
             </p>
 
             <p class="amr-footer-contact">
@@ -931,5 +959,7 @@ AOS.init({ duration: 900, once: true });
 <script src="assets/js/chatbot.js"></script>
 <script src="assets/js/sitevisitform.js"></script>
 <script src="assets/js/enquiryform.js"></script>
+<script src="assets/js/downloadbrochure.js"></script>
+
 </body>
 </html>

@@ -571,7 +571,8 @@ html, body {
         }
 
         .foundation-content p {
-            font-size: 16px;
+            font-size: 15px;
+            font-weight: 500;
             line-height: 1.6;
             color: #2a2a2a;
             margin: 0;
@@ -1225,16 +1226,16 @@ html, body {
     padding: 22px 26px;
 }
 
-.blog-content h3 {
-    font-size: 18px;
-    font-weight: 600;
+.blog-content p {
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: 8px;
     font-family: 'Raleway';
 }
 
 .author {
     font-size: 15px;
-    color: #d1a32c;
+    color: #202020;
     font-weight: 600;
 }
 
@@ -1259,7 +1260,7 @@ html, body {
 
 /* COLUMNS */
 .amr-footer-col {
-    min-height: 180px;
+    min-height: 280px;
 }
 
 /* LOGO */
@@ -1341,6 +1342,16 @@ html, body {
 .amr-footer-contact a:hover {
     color: #fff;
 }
+.amr-footer-contact {
+  white-space: normal;
+  line-height: 1.6;
+  max-width: 280px;
+}
+
+.no-break {
+  white-space: nowrap;
+}
+
 
 /* BOTTOM FOOTER */
 .amr-footer-bottom {
@@ -1540,6 +1551,43 @@ html, body {
 }
 
 
+
+
+/* =========================================
+   HARD FIX: REMOVE FORCED HEIGHT ON DESKTOP
+   ========================================= */
+@media (min-width: 1024px) {
+
+  .golden-tree-section,
+  .golden-tree-section > *,
+  .golden-tree-section .container,
+  .golden-tree-section .row {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .golden-tree-section {
+    padding-top: 70px !important;
+    padding-bottom: 40px !important;
+  }
+}
+/* =======================================================
+   ULTRAWIDE FIX (2560px+ ONLY)
+   Prevent Legacy section from stretching too far
+   ======================================================= */
+@media (min-width: 2000px) {
+
+  .legacy-unique {
+    max-width: 1600px;      /* clamps layout */
+    margin: 0 auto;         /* centers block */
+    column-gap: 40px;       /* controlled spacing */
+  }
+
+  .legacy-arc-box,
+  .legacy-content {
+    transform: none !important;  /* remove exaggeration */
+  }
+}
 
 
 

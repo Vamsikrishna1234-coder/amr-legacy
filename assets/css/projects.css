@@ -31,32 +31,6 @@
   object-fit: cover;
 }
 
-/* Stats Strip */
-.stats-strip {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: #ffffffeb;
-  backdrop-filter: blur(6px);
-  padding: 0px 90px;
-  display: flex;
-  justify-content: space-between;
-  z-index: 5;
-}
-
-.stat { text-align: center; }
-
-.stat h3 {
-  margin: 0;
-  font-size: 28px;
-  font-weight: 600;
-  color: #d1a32c;
-}
-
-.stat span {
-  font-size: 14px;
-  color: #333;
-}
 
 /* NEW PREV + NEXT BUTTONS */
 .carousel-nav-buttons {
@@ -85,6 +59,7 @@
   background: #c06643;
   color: #ffffff;
 }
+
 
 /* Dots */
 .carousel-dots {
@@ -484,13 +459,16 @@
 }
 
 .carousel {
-  width: calc(100% - 70px);    
+  width: calc(100% - 60px);    
   margin: 0 auto;
   overflow: hidden;
 }
+.carousel-item {
+  height: 720px;      /* change value here */
+}
 
 .carousel-item img {
-  height: 100vh;         
+  height: 580px;         
   object-fit: cover;
 }
 /* Mobile Only */
@@ -1153,7 +1131,7 @@
 
 .spec-text p {
   margin: 0;
-  color: #444;
+  color: #ffffff;
   font-size: 14px;
   line-height: 1.6;
 }
@@ -1231,8 +1209,8 @@
 /* Quote Heading */
 .location-quote h1{
   font-size: 33px;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 500;
+  font-style: inherit;
   color: #c06643;
   margin-bottom: 18px;
 }
@@ -1267,7 +1245,7 @@
 
     background: #d1a32c;
     color: #fff !important;
-    padding: 3px 3px;
+    padding: 8px 6px;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -1284,24 +1262,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0px;
+    gap: 6px;
 
-    transition: all 0.4s ease;
+    transition: 
+        right 0.35s ease,
+        background 0.35s ease,
+        box-shadow 0.35s ease;
+    
     cursor: pointer;
 }
 
-/* Icon inside (optional – you can add font-awesome or svg) */
+/* ICON */
 .brochure-btn-fixed::before {
     content: "↓";
-    font-size: 20px;
-    margin-bottom: 8px;
-    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
 }
 
-/* Hover Effect – Slide out + Color Change */
+/* HOVER EFFECT */
 .brochure-btn-fixed:hover {
     right: 8px;
     background: #203370;
-    padding-right: 16px;
     box-shadow: -8px 6px 20px rgba(0,0,0,0.3);
 }

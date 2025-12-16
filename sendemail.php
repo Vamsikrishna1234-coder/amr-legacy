@@ -1,11 +1,11 @@
 <?php
 
-$admin_email = "yourmail@gmail.com"; // CHANGE THIS
+$admin_email = "amrlivingspaces@gmail.com"; // this is OK
 
-$form_type = $_POST['form_type'];
-$name      = $_POST['name'];
-$phone     = $_POST['phone'];
-$email     = $_POST['email'];
+$form_type = $_POST['form_type'] ?? "Brochure Download";
+$name      = $_POST['name'] ?? "";
+$phone     = $_POST['phone'] ?? "";
+$email     = $_POST['email'] ?? "";
 $message   = $_POST['message'] ?? "";
 $date      = $_POST['date'] ?? "Not Provided";
 
@@ -25,7 +25,8 @@ $message
 Submitted At: " . date("Y-m-d H:i:s") . "
 ";
 
-$headers  = "From: Website Form <no-reply@yourdomain.com>\r\n";
+// ⚠️ DOMAIN MUST EXIST ON HOSTING
+$headers  = "From: Website Form <info@amrlegacy.in>\r\n";
 $headers .= "Reply-To: $email\r\n";
 
 if (mail($admin_email, $subject, $body, $headers)) {
@@ -33,4 +34,3 @@ if (mail($admin_email, $subject, $body, $headers)) {
 } else {
     echo "error";
 }
-?>
