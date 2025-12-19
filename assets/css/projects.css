@@ -1140,7 +1140,6 @@
 
 /* location map */
 /* Section Background */
-/* Section Background */
 .location-map-section {
   background: #ffffff;
   padding: 40px 40px;   /* equal left & right padding */
@@ -1214,11 +1213,35 @@
   color: #c06643;
   margin-bottom: 18px;
 }
+/* Location Points */
+.location-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.location-points li {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.location-points strong {
+  color: #203370;
+  font-weight: 600;
+}
+
 /* Mobile Only */
 @media (max-width: 576px) {
   .location-quote h1 {
     font-size: 22px;        /* smaller heading */
     margin-bottom: 14px;    /* reduced spacing */
+  }
+}
+@media (max-width: 576px) {
+  .location-points li {
+    font-size: 16px;
   }
 }
 

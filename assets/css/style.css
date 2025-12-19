@@ -617,25 +617,30 @@ html, body {
 
 /* about legacy */
 .legacy-unique {
-    display: grid;
-    grid-template-columns: 45% 55%;   /* More space for image, less for text */
-    padding: 60px 80px;               /* Equal spacing left & right */
-   align-items: start;
-    background: #ffffff;
-    column-gap: 0;    
-               /* Reduced gap */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+
+  max-width: 1350px;     /* 🔥 THIS IS THE FIX */
+  margin: 0 auto;        /* center the layout */
+
+  padding: 60px 40px;
+  align-items: start;
+  background: #ffffff;
 }
+
 /* FIX AOS CLIPPING */
 
 /* ARC IMAGE BOX */
 .legacy-arc-box {
-    position: relative;
-    width: 100%;                      /* FULL width of its column */
-    max-width: 500px;                 /* allow large images */
-    height: 600px;                    /* taller so arc fits well */
-    margin: 0;   
-                       
+  width: 100%;
+  max-width: 520px;
+  height: 600px;
 }
+
+
+
+
 
 /* GOLD ARC */
 .arc-frame {
@@ -660,7 +665,8 @@ html, body {
 
 /* TEXT SECTION */
 .legacy-content {
-    margin: 0;   
+    margin: 0;  
+    max-width: 700px; 
                      /* remove auto gap */
 }
 
@@ -863,7 +869,7 @@ html, body {
 .pcf-image {
   position: relative;
   width: 100%;
-  height: 520px;
+  height: 580px;
   overflow: hidden;
 }
 
@@ -907,36 +913,58 @@ html, body {
 }
 
 /* SPECS */
+/* SPECS – NEW STYLE */
 .pcf-specs {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  border-top: 1px solid #eee;
-  padding-top: 20px;
-  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 25px;
+  margin-bottom: 30px;
 }
 
-/* each spec box */
+/* each spec box as card */
 .spec-box {
-  flex: 1;
-  text-align: left;
-  padding-right: 20px;
-  position: relative;
+  background: #f8f9fc;
+  border: 1px solid #e4e7f0;
+  border-radius: 12px;
+  padding: 18px 12px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* vertical separator */
+.spec-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* REMOVE vertical line completely */
 .spec-box:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 1.9px;
-  height: 85px;
-  background: #000000;
-  
-
+  display: none;
 }
+
+/* icon */
+.spec-box i {
+  font-size: 22px;
+  color: #d1a32c;
+  margin-bottom: 6px;
+}
+
+/* label */
+.spec-box .label {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* value */
+.spec-box .value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #203370;
+}
+
 
 .spec-box i {
   font-size: 22px;
@@ -955,10 +983,26 @@ html, body {
   color: #203370;
 }
 
+.rupee-symbol {
+  font-size: 22px;
+  font-weight: 700;
+  color: #203370;
+
+  display: inline-flex;        /* 🔥 key */
+  align-items: center;
+  justify-content: center;
+
+  height: 26px;                /* same visual height as icon */
+  line-height: 1;
+
+  margin-bottom: 6px;
+}
+
+
 /* VIEW PROJECT BUTTON */
 .pcf-view-btn {
   display: inline-block;
-  padding: 8px 20px;
+  padding: 13px 20px;
   background: #203370;
   color: #fff;
   font-weight: 600;
@@ -967,13 +1011,13 @@ html, body {
   font-size: 14px;
   border-radius: 6px;
   transition: 0.3s;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  margin: 20px 0 15px auto;   /* 🔥 KEY LINE */
 }
 
 .pcf-view-btn:hover {
   background: #d1a32c;
 }
+
 /* ===========================
    MOBILE ONLY (max-width: 600px)
    =========================== */
@@ -988,6 +1032,8 @@ html, body {
   .pcf-content {
     padding: 18px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   .pcf-title {
@@ -999,20 +1045,24 @@ html, body {
     margin-bottom: 20px;
   }
 
-  /* Specs section becomes vertical */
+  /* SPECS → card layout */
   .pcf-specs {
-    flex-direction: column;
-    gap: 18px;
-    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding-top: 18px;
+    margin-bottom: 20px;
   }
 
   .spec-box {
-    flex: 1 1 100%;
+    background: #f8f9fc;
+    border: 1px solid #e4e7f0;
+    border-radius: 12px;
+    padding: 14px 10px;
     text-align: center;
-    padding-right: 0;
   }
 
-  /* remove vertical lines */
+  /* remove vertical separators */
   .spec-box:not(:last-child)::after {
     display: none;
   }
@@ -1029,13 +1079,16 @@ html, body {
     font-size: 16px;
   }
 
-  /* Button */
+  /* View Project Button → CENTERED */
   .pcf-view-btn {
     font-size: 13px;
     padding: 8px 18px;
-    margin-top: 25px;
+    margin: 25px auto 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
+
 
 
 
@@ -1571,23 +1624,23 @@ html, body {
     padding-bottom: 40px !important;
   }
 }
-/* =======================================================
-   ULTRAWIDE FIX (2560px+ ONLY)
-   Prevent Legacy section from stretching too far
-   ======================================================= */
-@media (min-width: 2000px) {
 
-  .legacy-unique {
-    max-width: 1600px;      /* clamps layout */
-    margin: 0 auto;         /* centers block */
-    column-gap: 40px;       /* controlled spacing */
+
+@media (min-width: 2000px) {
+  .legacy-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 48px;
   }
 
   .legacy-arc-box,
   .legacy-content {
-    transform: none !important;  /* remove exaggeration */
+    flex: 0 0 50%;
   }
 }
+
 
 
 
