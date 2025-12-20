@@ -1464,7 +1464,7 @@ html, body {
 
 /* CHATBOX */
 .chatbox {
-    width: 330px;
+    width: 300px;
     background: #fff;
     position: fixed;
     right: 25px;
@@ -1485,6 +1485,11 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+}
+.chatbox-header h4{
+    font-size: 20px;
+    font-weight: 500;
 }
 .close-chat {
     cursor: pointer;
@@ -1494,7 +1499,9 @@ html, body {
 /* OPTIONS */
 .chatbox-options {
     padding: 15px;
-    max-height: 350px;
+
+    /* CHANGED */
+    max-height: 260px;   /* was 350px */
     overflow-y: auto;
 }
 .chat-option-btn {
